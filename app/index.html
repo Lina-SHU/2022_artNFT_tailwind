@@ -1,0 +1,477 @@
+---
+title: 首頁
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<main>
+  <div class="lg:container pb-10 lg:pt-10 lg:pb-20">
+    <ul class="lg:flex lg:flex-wrap">
+      <li class="border-t border-t-black border-b border-b-black lg:w-full lg:flex lg:border lg:border-black lg:border-b-0">
+        <div class="hidden lg:block lg:w-1/12 lg:bg-black lg:text-white lg:p-6 lg:text-5xl lg:leading-12 lg:flex lg:items-center [writing-mode:vertical-lr]">
+          Recommend
+          <span class="text-xl leading-5 mt-4">推薦系列</span>
+        </div>
+        <div class="h-[238px] overflow-hidden bg-[url('../images/art01.jpg')] bg-center bg-no-repeat bg-cover lg:w-7/12 lg:h-[500px] lg:border-r lg:border-black"></div>
+        <div class="px-3 py-8 lg:w-4/12 lg:px-6 lg:pt-20 lg:pb-6 lg:flex lg:justify-between lg:flex-col">
+          <div>
+            <p class="text-lg mb-2">Kemus Wu</p>
+            <h2 class="text-2xl font-bold mb-6 lg:text-5xl">瞳孔:流動的脈絡</h2>
+            <p class="mb-6">
+              眼睛，總是吸引著我們的注意力，看、被看，也許眼睛裡有著從另一個世界看我們的世界。
+            </p>
+          </div>
+          <div class="text-right">
+            <a href="#" class="relative inline-block border border-black text-lg py-2 px-12 leading-4.5 after:absolute after:content-[''] after:w-0 after:h-0 after:bottom-0 after:right-0 after:border-r-[16px] after:border-r-primary after:border-t-[16px] after:border-t-transparent hover:bg-primary hover:text-white after:hover:border-r-black">MORE</a>
+          </div>
+        </div>
+      </li>
+      <li class="border-t border-t-black border-b border-b-black lg:w-1/2 lg:flex lg:flex-row-reverse lg:border lg:border-black">
+        <div class="h-[372px] overflow-hidden bg-[url('../images/art02.jpg')] bg-center bg-no-repeat bg-cover lg:h-full lg:w-1/2 lg:border-l lg:border-black"></div>
+        <div class="px-3 py-8 lg:w-1/2 lg:px-6 lg:pt-12 lg:pb-6 lg:flex lg:justify-between lg:flex-col">
+          <div>
+            <p class="text-lg mb-2">Joanne</p>
+            <h2 class="text-2xl font-bold mb-6 lg:text-3xxl">海洋波度</h2>
+            <p class="mb-6">
+              海洋的奧秘向我們揭示了深不可測的一面，它的深度——反映了我們的恐懼、同時也吸引著我們。
+            </p>
+          </div>
+          <div class="text-right">
+            <a href="#"
+              class="relative inline-block border border-black text-lg py-2 px-12 leading-4.5 after:absolute after:content-[''] after:w-0 after:h-0 after:bottom-0 after:right-0 after:border-r-[16px] after:border-r-primary after:border-t-[16px] after:border-t-transparent hover:bg-primary hover:text-white after:hover:border-r-black">MORE</a>
+          </div>
+        </div>
+      </li>
+      <li class="border-t border-t-black border-b-2 border-b-black lg:w-1/2 lg:flex lg:flex-row-reverse lg:border lg:border-black lg:border-l-0">
+        <div class="h-[372px] overflow-hidden bg-[url('../images/art21.jpg')] bg-center bg-no-repeat bg-cover lg:h-full lg:w-1/2 lg:border-l lg:border-black"></div>
+        <div class="px-3 py-8 lg:w-1/2 lg:px-6 lg:pt-12 lg:pb-6 lg:flex lg:justify-between lg:flex-col">
+          <div>
+            <p class="text-lg mb-2">Michael</p>
+            <h2 class="text-2xl font-bold mb-6 lg:text-3xxl">我家窗前的鳥</h2>
+            <p class="mb-6">
+              家門前每天都有不同的小鳥，大多數的小鳥都有特殊能力，特殊能力是什麼我就不說了，希望大家能從作品感受到小鳥的快樂。
+            </p>
+          </div>
+          <div class="text-right">
+            <a href="#"
+              class="relative inline-block border border-black text-lg py-2 px-12 leading-4.5 after:absolute after:content-[''] after:w-0 after:h-0 after:bottom-0 after:right-0 after:border-r-[16px] after:border-r-primary after:border-t-[16px] after:border-t-transparent hover:bg-primary hover:text-white after:hover:border-r-black">MORE</a>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <!-- ranking -->
+  <section class="container">
+    <div class="flex justify-between items-end border-b border-black mb-6 lg:mb-12">
+      <h2 class="text-3xxl leading-8 mb-2 lg:flex lg:items-end lg:text-5xl lg:leading-12 lg:mb-4">
+        Ranking
+        <span class="hidden lg:inline-block text-xl font-bold ml-4">市價排行榜</span>
+      </h2>
+      <a href="#" class="relative inline-block text-lg py-2 px-12 leading-4.5 after:absolute after:content-[''] after:w-0 after:h-0 after:bottom-0 after:right-0 after:border-r-[16px] after:border-r-primary after:border-t-[16px] after:border-t-transparent after:hover:border-r-black hover:bg-primary hover:text-white hover:border hover:border-black hover:border-b-0">MORE</a>
+    </div>
+    <ul class="mb-10 lg:mb-20 lg:flex lg:flex-wrap lg:-mx-3">
+      <li class="mb-4 lg:w-1/3 lg:px-3">
+        <div class="border border-black flex lg:block lg:relative">
+          <p class="grow-0 w-[11.3%] flex justify-center items-center text-2xl leading-6 py-6 px-2 lg:absolute lg:top-0 lg:left-0 lg:bg-white lg:text-3xxl lg:p-2 lg:border-black lg:border-b lg:border-r lg:w-12 lg:leading-8 lg:z-30">1</p>
+          <a href="#" class="group grow-0 w-[25.8%] relative bg-[url('../images/art04.jpg')] bg-no-repeat bg-cover bg-center border-l border-black lg:w-full lg:h-[374px] lg:border-l-0 lg:border-b lg:bg-top hover:after:absolute hover:after:content-[''] hover:after:top-0 hover:after:left-0 hover:after:right-0 hover:after:bottom-0 hover:after:bg-black hover:after:opacity-50">
+            <div class="hidden inline-block text-white text-lg leading-4.5 absolute right-0 bottom-0 px-12 py-2 bg-primary border-black border-t border-l z-30 group-hover:block">more</div>
+            <div class="w-0 h-0 absolute hidden bottom-0 right-0 border-r-16 border-r-black border-t-16 border-t-transparent z-30 group-hover:block">
+            </div>
+          </a>
+          <div class="grow">
+            <h3 class="text-lg font-bold border-l border-b border-black py-4 px-2 lg:border-l-0 lg:px-4">散步遇到的女人</h3>
+            <div class="flex justify-between border-l border-black p-2 leading-4 lg:border-l-0 lg:px-4">
+              <p>Zoe Jiang</p>
+              <p>
+                <i class="fa-brands fa-ethereum mr-2"></i>
+                300
+              </p>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="mb-4 lg:w-1/3 lg:px-3">
+        <div class="border border-black flex lg:block lg:relative">
+          <p class="grow-0 w-[11.3%] flex justify-center items-center text-2xl leading-6 py-6 px-2 lg:absolute lg:top-0 lg:left-0 lg:bg-white lg:text-3xxl lg:p-2 lg:border-black lg:border-b lg:border-r lg:w-12 lg:leading-8 lg:z-30">2</p>
+          <a href="#" class="group grow-0 w-[25.8%] relative bg-[url('../images/art05.jpg')] bg-no-repeat bg-cover bg-center border-l border-black lg:w-full lg:h-[374px] lg:border-l-0 lg:border-b lg:bg-top hover:after:absolute hover:after:content-[''] hover:after:top-0 hover:after:left-0 hover:after:right-0 hover:after:bottom-0 hover:after:bg-black hover:after:opacity-50">
+            <div
+              class="hidden inline-block text-white text-lg leading-4.5 absolute right-0 bottom-0 px-12 py-2 bg-primary border-black border-t border-l z-30 group-hover:block">
+              more</div>
+            <div
+              class="w-0 h-0 absolute hidden bottom-0 right-0 border-r-16 border-r-black border-t-16 border-t-transparent z-30 group-hover:block">
+            </div>
+          </a>
+          <div class="grow">
+            <h3 class="text-lg font-bold border-l border-b border-black py-4 px-2 lg:border-l-0 lg:px-4">爆炸頭的母親</h3>
+            <div class="flex justify-between border-l border-black p-2 leading-4 lg:border-l-0 lg:px-4">
+              <p>Yui</p>
+              <p>
+                <i class="fa-brands fa-ethereum mr-2"></i>
+                300
+              </p>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="mb-4 lg:w-1/3 lg:px-3">
+        <div class="border border-black flex lg:block lg:relative">
+          <p class="grow-0 w-[11.3%] flex justify-center items-center text-2xl leading-6 py-6 px-2 lg:absolute lg:top-0 lg:left-0 lg:bg-white lg:text-3xxl lg:p-2 lg:border-black lg:border-b lg:border-r lg:w-12 lg:leading-8 lg:z-30">3</p>
+          <a href="#" class="group grow-0 w-[25.8%] bg-[url('../images/art06.jpg')] bg-no-repeat bg-cover bg-center border-l border-black lg:w-full lg:h-[374px] lg:border-l-0 lg:border-b lg:bg-top lg:relative hover:after:absolute hover:after:content-[''] hover:after:top-0 hover:after:left-0 hover:after:right-0 hover:after:bottom-0 hover:after:bg-black hover:after:opacity-50">
+            <div
+              class="hidden inline-block text-white text-lg leading-4.5 absolute right-0 bottom-0 px-12 py-2 bg-primary border-black border-t border-l z-30 group-hover:block">
+              more</div>
+            <div
+              class="w-0 h-0 absolute hidden bottom-0 right-0 border-r-16 border-r-black border-t-16 border-t-transparent z-30 group-hover:block">
+            </div>
+          </a>
+          <div class="grow">
+            <h3 class="text-lg font-bold border-l border-b border-black py-4 px-2 lg:border-l-0 lg:px-4">夏天的時候</h3>
+            <div class="flex justify-between border-l border-black p-2 leading-4 lg:border-l-0 lg:px-4">
+              <p>Bug Lin</p>
+              <p>
+                <i class="fa-brands fa-ethereum mr-2"></i>
+                300
+              </p>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="mb-4 lg:w-1/3 lg:px-3">
+        <div class="border border-black flex">
+          <p class="grow-0 w-[11.3%] flex justify-center items-center text-2xl leading-6 py-6 px-2 lg:px-4 lg:w-[13.5%]">4</p>
+          <a href="#" class="group grow-0 relative w-[25.8%] bg-[url('../images/art29.jpg')] bg-no-repeat bg-cover bg-center border-l border-black lg:w-[20.9%] hover:after:absolute hover:after:content-['more'] hover:after:top-0 hover:after:left-0 hover:after:right-0 hover:after:bottom-0 hover:after:bg-black hover:after:opacity-70 hover:after:text-white hover:after:flex hover:after:justify-center hover:after:items-center">
+            <div
+              class="w-0 h-0 absolute hidden bottom-0 right-0 border-r-16 border-r-primary border-t-16 border-t-transparent z-20 group-hover:block">
+            </div>
+          </a>
+          <div class="grow">
+            <h3 class="text-lg font-bold border-l border-b border-black py-4 px-2 lg:px-4">追求者送我的花</h3>
+            <div class="flex justify-between border-l border-black p-2 leading-4 lg:px-4">
+              <p>Michael</p>
+              <p>
+                <i class="fa-brands fa-ethereum mr-2"></i>
+                300
+              </p>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="mb-4 lg:w-1/3 lg:px-3">
+        <div class="border border-black flex">
+          <p class="grow-0 w-[11.3%] flex justify-center items-center text-2xl leading-6 py-6 px-2 lg:px-4 lg:w-[13.5%]">5</p>
+          <a href="#" class="group grow-0 relative w-[25.8%] bg-[url('../images/art07.jpg')] bg-no-repeat bg-cover bg-center border-l border-black lg:w-[20.9%] hover:after:absolute hover:after:content-['more'] hover:after:top-0 hover:after:left-0 hover:after:right-0 hover:after:bottom-0 hover:after:bg-black hover:after:opacity-70 hover:after:text-white hover:after:flex hover:after:justify-center hover:after:items-center">
+            <div
+              class="w-0 h-0 absolute hidden bottom-0 right-0 border-r-16 border-r-primary border-t-16 border-t-transparent z-20 group-hover:block">
+            </div>
+          </a>
+          <div class="grow">
+            <h3 class="text-lg font-bold border-l border-b border-black py-4 px-2 lg:px-4">今天釣到的魚</h3>
+            <div class="flex justify-between border-l border-black p-2 leading-4 lg:px-4">
+              <p>Wei JJ</p>
+              <p>
+                <i class="fa-brands fa-ethereum mr-2"></i>
+                300
+              </p>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="lg:w-1/3 lg:px-3">
+        <div class="border border-black flex">
+          <p class="grow-0 w-[11.3%] flex justify-center items-center text-2xl leading-6 py-6 px-2 lg:px-4 lg:w-[13.5%]">6</p>
+          <a href="#" class="group grow-0 relative w-[25.8%] bg-[url('../images/art08.jpg')] bg-no-repeat bg-cover bg-center border-l border-black lg:w-[20.9%] hover:after:absolute hover:after:content-['more'] hover:after:top-0 hover:after:left-0 hover:after:right-0 hover:after:bottom-0 hover:after:bg-black hover:after:opacity-70 hover:after:text-white hover:after:flex hover:after:justify-center hover:after:items-center">
+            <div class="w-0 h-0 absolute hidden bottom-0 right-0 border-r-16 border-r-primary border-t-16 border-t-transparent z-20 group-hover:block"></div>
+          </a>
+          <div class="grow">
+            <h3 class="text-lg font-bold border-l border-b border-black py-4 px-2 lg:px-4">人生中的貓咪們</h3>
+            <div class="flex justify-between border-l border-black p-2 leading-4 lg:px-4">
+              <p>Even Lai</p>
+              <p>
+                <i class="fa-brands fa-ethereum mr-2"></i>
+                300
+              </p>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </section>
+  <!-- Artist -->
+  <section class="container pb-10 lg:pb-20">
+    <div class="flex justify-between items-end border-b border-black mb-6 lg:mb-12">
+      <h2 class="author text-3xxl leading-8 mb-2 lg:flex lg:items-end lg:text-5xl lg:leading-12 lg:mb-4">
+        Artist
+        <span class="hidden lg:inline-block text-xl font-bold ml-4">熱門藝術家</span>
+      </h2>
+      <a href="#"
+        class="relative inline-block text-lg py-2 px-12 leading-4.5 after:absolute after:content-[''] after:w-0 after:h-0 after:bottom-0 after:right-0 after:border-r-[16px] after:border-r-primary after:border-t-[16px] after:border-t-transparent after:hover:border-r-black hover:bg-primary hover:text-white hover:border hover:border-black hover:border-b-0">MORE</a>
+    </div>
+    <div class="swiper"  style="width:100%;">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide xl:relative">
+          <div class="notActive relative h-[232px] mb-4 bg-[url('../images/artist01.jpg')] bg-no-repeat bg-center bg-cover">
+            <div class="author text-white text-3xxl leading-8 absolute top-6 left-6">Antony Wu</div>
+            <a href="#" class="moreBtn absolute right-2 bottom-2 bg-white inline-block border border-black text-lg py-2 px-12 leading-4.5 after:absolute after:content-[''] after:w-0 after:h-0 after:bottom-0 after:right-0 after:border-r-[16px] after:border-r-primary after:border-t-[16px] after:border-t-transparent hover:bg-primary hover:text-white after:hover:border-r-black">MORE</a>
+          </div>
+          <div class="desc p-6 pt-10 bg-white xl:absolute xl:bottom-6 xl:left-6 xl:pt-6 xl:bg-white/[0.85] xl:w-[48.3%]">
+            <p>​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
+          </div>
+        </div>
+        <div class="swiper-slide xl:relative">
+          <div class="notActive relative h-[232px] mb-4 bg-[url('../images/artist02.jpg')] bg-no-repeat bg-center bg-cover lg:">
+            <div class="author text-white text-3xxl leading-8 absolute top-6 left-6">Antony Wu</div>
+            <a href="#"
+              class="moreBtn absolute right-2 bottom-2 bg-white inline-block border border-black text-lg py-2 px-12 leading-4.5 after:absolute after:content-[''] after:w-0 after:h-0 after:bottom-0 after:right-0 after:border-r-[16px] after:border-r-primary after:border-t-[16px] after:border-t-transparent hover:bg-primary hover:text-white after:hover:border-r-black">MORE</a>
+          </div>
+          <div class="desc p-6 pt-10 bg-white xl:absolute xl:bottom-6 xl:left-6 xl:pt-6 xl:bg-white/[0.85] xl:w-[48.3%]">
+            <p>​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
+          </div>
+        </div>
+        <div class="swiper-slide xl:relative">
+          <div class="notActive relative h-[232px] mb-4 bg-[url('../images/artist03.jpg')] bg-no-repeat bg-center bg-cover">
+            <div class="author text-white text-3xxl leading-8 absolute top-6 left-6">Antony Wu</div>
+            <a href="#" class="moreBtn absolute right-2 bottom-2 bg-white inline-block border border-black text-lg py-2 px-12 leading-4.5 after:absolute after:content-[''] after:w-0 after:h-0 after:bottom-0 after:right-0 after:border-r-[16px] after:border-r-primary after:border-t-[16px] after:border-t-transparent hover:bg-primary hover:text-white after:hover:border-r-black">MORE</a>
+          </div>
+          <div class="desc p-6 pt-10 bg-white xl:absolute xl:bottom-6 xl:left-6 xl:pt-6 xl:bg-white/[0.85] xl:w-[48.3%]">
+            <p>​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination static"></div>
+    </div>
+  </section>
+  <!-- Artwork -->
+  <section class="container pb-10 lg:pb-20">
+    <div class="flex justify-between items-end border-b border-black mb-6 lg:mb-12">
+      <h2 class="author text-3xxl leading-8 mb-2 lg:flex lg:items-end lg:text-5xl lg:leading-12 lg:mb-4">
+        Artwork
+        <span class="hidden lg:inline-block text-xl font-bold ml-4">最新藝術品</span>
+      </h2>
+      <a href="#"
+        class="relative inline-block text-lg py-2 px-12 leading-4.5 after:absolute after:content-[''] after:w-0 after:h-0 after:bottom-0 after:right-0 after:border-r-[16px] after:border-r-primary after:border-t-[16px] after:border-t-transparent after:hover:border-r-black hover:bg-primary hover:text-white hover:border hover:border-black hover:border-b-0">MORE</a>
+    </div>
+    <div class="grid -mx-3">
+      <!-- width of .grid-sizer used for columnWidth -->
+      <div class="grid-sizer w-1/2 px-3 lg:w-1/4"></div>
+      <div class="grid-item mb-4 w-1/2 px-3 lg:w-1/4 lg:mb-12">
+        <a href="#" class="group bg-white p-2 lg:p-6">
+          <div class="bg-[url('../images/art09.jpg')] bg-no-repeat bg-center bg-cover relative h-[139px] lg:h-[254px]">
+            <div class="hidden bg-black/[0.7] absolute top-0 bottom-0 left-0 right-0 p-4 z-20 lg:group-hover:block">
+              <div class="border border-white p-4 h-full text-white flex flex-col justify-between items-start">
+                <div>
+                  <p class="mb-4">唯一想擁有的人，唯一不可以擁有的</p>
+                  <p>
+                    <i class="fa-brands fa-ethereum mr-2"></i>
+                    300
+                  </p>
+                </div>
+                <div class="relative bg-white inline-block border border-black text-lg py-2 px-12 text-black leading-4.5 ml-auto after:absolute after:content-[''] after:w-0 after:h-0 after:bottom-0 after:right-0 after:border-r-[16px] after:border-r-primary after:border-t-[16px] after:border-t-transparent hover:bg-primary hover:text-white after:hover:border-r-black">
+                  MORE</div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <p class="p-2 lg:px-0 lg:py-4 lg:border-b lg:border-black lg:font-bold">區塊戀-他的私生活</p>
+      </div>
+      <div class="grid-item mb-4 w-1/2 px-3 lg:w-1/4 lg:mb-12">
+        <a href="#" class="group bg-white p-2 lg:p-6">
+          <div class="bg-[url('../images/art10.jpg')] bg-no-repeat bg-center relative bg-cover h-[151px] lg:h-[327px]">
+            <div class="hidden bg-black/[0.7] absolute top-0 bottom-0 left-0 right-0 p-4 z-20 lg:group-hover:block">
+              <div class="border border-white p-4 h-full text-white flex flex-col justify-between items-start">
+                <div>
+                  <p class="mb-4">唯一想擁有的人，唯一不可以擁有的</p>
+                  <p>
+                    <i class="fa-brands fa-ethereum mr-2"></i>
+                    300
+                  </p>
+                </div>
+                <div class="relative bg-white inline-block border border-black text-lg py-2 px-12 text-black leading-4.5 ml-auto after:absolute after:content-[''] after:w-0 after:h-0 after:bottom-0 after:right-0 after:border-r-[16px] after:border-r-primary after:border-t-[16px] after:border-t-transparent hover:bg-primary hover:text-white after:hover:border-r-black">
+                  MORE</div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <p class="p-2 lg:px-0 lg:py-4 lg:border-b lg:border-black lg:font-bold">夏娃的醜聞</p>
+      </div>
+      <div class="grid-item mb-4 w-1/2 px-3 lg:w-1/4 lg:mb-12">
+        <a href="#" class="group bg-white p-2 lg:p-6">
+          <div class="bg-[url('../images/art02.jpg')] bg-no-repeat bg-center bg-cover relative h-[93px] lg:h-[254px]">
+            <div class="hidden bg-black/[0.7] absolute top-0 bottom-0 left-0 right-0 p-4 z-20 lg:group-hover:block">
+              <div class="border border-white p-4 h-full text-white flex flex-col justify-between items-start">
+                <div>
+                  <p class="mb-4">唯一想擁有的人，唯一不可以擁有的</p>
+                  <p>
+                    <i class="fa-brands fa-ethereum mr-2"></i>
+                    300
+                  </p>
+                </div>
+                <div
+                  class="relative bg-white inline-block border border-black text-lg py-2 px-12 text-black leading-4.5 ml-auto after:absolute after:content-[''] after:w-0 after:h-0 after:bottom-0 after:right-0 after:border-r-[16px] after:border-r-primary after:border-t-[16px] after:border-t-transparent hover:bg-primary hover:text-white after:hover:border-r-black">
+                  MORE</div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <p class="p-2 lg:px-0 lg:py-4 lg:border-b lg:border-black lg:font-bold">藍色啤酒海</p>
+      </div>
+      <div class="grid-item mb-4 w-1/2 px-3 lg:w-1/4 lg:mb-12">
+        <a href="#" class="group bg-white p-2 lg:p-6">
+          <div class="bg-[url('../images/art11.jpg')] bg-no-repeat bg-center bg-cover relative h-[173px] lg:h-[169px]">
+            <div class="hidden bg-black/[0.7] absolute top-0 bottom-0 left-0 right-0 p-4 z-20 lg:group-hover:block">
+              <div class="border border-white p-4 h-full text-white flex flex-col justify-between items-start">
+                <div>
+                  <p class="mb-4">唯一想擁有的人，唯一不可以擁有的</p>
+                  <p>
+                    <i class="fa-brands fa-ethereum mr-2"></i>
+                    300
+                  </p>
+                </div>
+                <div
+                  class="relative bg-white inline-block border border-black text-lg py-2 px-12 text-black leading-4.5 ml-auto after:absolute after:content-[''] after:w-0 after:h-0 after:bottom-0 after:right-0 after:border-r-[16px] after:border-r-primary after:border-t-[16px] after:border-t-transparent hover:bg-primary hover:text-white after:hover:border-r-black">
+                  MORE</div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <p class="p-2 lg:px-0 lg:py-4 lg:border-b lg:border-black lg:font-bold">沒有人愛我</p>
+      </div>
+      <div class="grid-item hidden w-1/2 px-3 lg:block lg:w-1/4">
+        <a href="#" class="group bg-white p-2 lg:p-6">
+          <img src="./assets/images/art27.jpg" alt="我真的受傷了" class="hidden p-6 bg-white">
+          <div class="bg-[url('../images/art27.jpg')] bg-no-repeat bg-center bg-cover relative h-[192px] lg:h-[254px]">
+            <div class="hidden bg-black/[0.7] absolute top-0 bottom-0 left-0 right-0 p-4 z-20 lg:group-hover:block">
+              <div class="border border-white p-4 h-full text-white flex flex-col justify-between items-start">
+                <div>
+                  <p class="mb-4">唯一想擁有的人，唯一不可以擁有的</p>
+                  <p>
+                    <i class="fa-brands fa-ethereum mr-2"></i>
+                    300
+                  </p>
+                </div>
+                <div
+                  class="relative bg-white inline-block border border-black text-lg py-2 px-12 text-black leading-4.5 ml-auto after:absolute after:content-[''] after:w-0 after:h-0 after:bottom-0 after:right-0 after:border-r-[16px] after:border-r-primary after:border-t-[16px] after:border-t-transparent hover:bg-primary hover:text-white after:hover:border-r-black">
+                  MORE</div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <p class="p-2 lg:px-0 lg:py-4 lg:border-b lg:border-black lg:font-bold">我真的受傷了</p>
+      </div>
+      <div class="grid-item w-1/2 px-3 lg:w-1/4 lg:mb-12">
+        <a href="#" class="group bg-white p-2 lg:p-6">
+          <div class="bg-[url('../images/art12.jpg')] bg-no-repeat bg-center bg-cover relative h-[192px] lg:h-[174px]">
+            <div class="hidden bg-black/[0.7] absolute top-0 bottom-0 left-0 right-0 p-4 z-20 lg:group-hover:block">
+              <div class="border border-white p-4 h-full text-white flex flex-col justify-between items-start">
+                <div>
+                  <p class="mb-4">唯一想擁有的人，唯一不可以擁有的</p>
+                  <p>
+                    <i class="fa-brands fa-ethereum mr-2"></i>
+                    300
+                  </p>
+                </div>
+                <div
+                  class="relative bg-white inline-block border border-black text-lg py-2 px-12 text-black leading-4.5 ml-auto after:absolute after:content-[''] after:w-0 after:h-0 after:bottom-0 after:right-0 after:border-r-[16px] after:border-r-primary after:border-t-[16px] after:border-t-transparent hover:bg-primary hover:text-white after:hover:border-r-black">
+                  MORE</div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <p class="p-2 lg:px-0 lg:py-4 lg:border-b lg:border-black lg:font-bold">不哭不哭眼淚是珍珠</p>
+      </div>
+      <div class="grid-item hidden w-1/2 px-3 lg:block lg:w-1/4">
+        <a href="#" class="group bg-white p-2 lg:p-6">
+          <div class="bg-[url('../images/art04.jpg')] bg-no-repeat bg-center bg-cover h-[395px] relative">
+            <div class="hidden bg-black/[0.7] absolute top-0 bottom-0 left-0 right-0 p-4 z-20 lg:group-hover:block">
+              <div class="border border-white p-4 h-full text-white flex flex-col justify-between items-start">
+                <div>
+                  <p class="mb-4">唯一想擁有的人，唯一不可以擁有的</p>
+                  <p>
+                    <i class="fa-brands fa-ethereum mr-2"></i>
+                    300
+                  </p>
+                </div>
+                <div
+                  class="relative bg-white inline-block border border-black text-lg py-2 px-12 text-black leading-4.5 ml-auto after:absolute after:content-[''] after:w-0 after:h-0 after:bottom-0 after:right-0 after:border-r-[16px] after:border-r-primary after:border-t-[16px] after:border-t-transparent hover:bg-primary hover:text-white after:hover:border-r-black">
+                  MORE</div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <p class="p-2 lg:px-0 lg:py-4 lg:border-b lg:border-black lg:font-bold">我這樣有美嗎</p>
+      </div>
+      <div class="grid-item w-1/2 px-3 lg:w-1/4">
+        <a href="#" class="group bg-white p-2 lg:p-6">
+          <div class="bg-[url('../images/art03.jpg')] bg-no-repeat bg-center bg-cover relative h-[99px] lg:h-[254px]">
+            <div class="hidden bg-black/[0.7] absolute top-0 bottom-0 left-0 right-0 p-4 z-20 lg:group-hover:block">
+              <div class="border border-white p-4 h-full text-white flex flex-col justify-between items-start">
+                <div>
+                  <p class="mb-4">唯一想擁有的人，唯一不可以擁有的</p>
+                  <p>
+                    <i class="fa-brands fa-ethereum mr-2"></i>
+                    300
+                  </p>
+                </div>
+                <div
+                  class="relative bg-white inline-block border border-black text-lg py-2 px-12 text-black leading-4.5 ml-auto after:absolute after:content-[''] after:w-0 after:h-0 after:bottom-0 after:right-0 after:border-r-[16px] after:border-r-primary after:border-t-[16px] after:border-t-transparent hover:bg-primary hover:text-white after:hover:border-r-black">
+                  MORE</div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <p class="p-2 lg:px-0 lg:py-4 lg:border-b lg:border-black lg:font-bold">十分鐘就到</p>
+      </div>
+    </div>
+  </section>
+  <!-- Join Us -->
+  <section>
+    <div class="border-b-4 border-black pb-8 text-center mb-2 lg:pb-10">
+      <h2 class="text-3xxl lelading-8 mb-4 lg:text-5xl lg:leading-12">Join Us</h2>
+      <p class="text-xl">創建並出售你的藝術品</p>
+    </div>
+    <div class="h-[1px] bg-black"></div>
+    <div class="md:container">
+      <ul class="py-12 lg:py-20 md:flex md:flex-wrap md:-mx-3">
+        <li class="text-center mb-12 md:w-1/2 md:px-3 lg:w-1/4">
+          <i class="fa-solid fa-wallet mb-4 text-primary text-[46px]"></i>
+          <h3 class="text-lg font-bold mb-6">設置你的錢包</h3>
+          <p>設置好您選擇的錢包後<br>點擊右上角的錢包圖標進行連接</p>
+        </li>
+        <li class="text-center mb-12 md:w-1/2 md:px-3 lg:w-1/4">
+          <i class="fa-solid fa-pen-ruler mb-4 text-primary text-[40px]"></i>
+          <h3 class="text-lg font-bold mb-6">創建您的主頁</h3>
+          <p>註冊成為會員，編輯您的資料<br>讓大家了解你</p>
+        </li>
+        <li class="text-center mb-12 md:w-1/2 md:px-3 lg:w-1/4">
+          <i class="fa-solid fa-icons mb-4 text-primary text-[40px]"></i>
+          <h3 class="text-lg font-bold mb-6">添加你的 NFT</h3>
+          <p>上傳你的作品<br>添加標題和描述</p>
+        </li>
+        <li class="text-center mb-12 md:w-1/2 md:px-3 lg:w-1/4">
+          <i class="fa-solid fa-tags mb-4 text-primary text-[45px]"></i>
+          <h3 class="text-lg font-bold mb-6">列出它們出售</h3>
+          <p>選擇出售 NFT 的方式<br>並設定價格，等待有緣人</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<script>
+  const swiper = new Swiper('.swiper', {
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+      },
+      centeredSlides: true,
+      roundLengths: true,
+      loopAdditionalSlides: 30,
+      breakpoints: {
+        960: {
+          slidesPerView: 3,
+          spaceBetween: 24
+        }
+      }
+    });
+</script>
