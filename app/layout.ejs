@@ -20,11 +20,58 @@
 </head>
 
 <body class="bg-light">
-  <header class="header">
-    這是 header
+  <header class="bg-light fixed top-0 left-0 right-0 z-40  border-b border-black">
+    <nav class="container flex justify-between items-center py-4 lg:py-0">
+      <h1>
+        <a href="./index.html"
+          class="bg-[url('../images/logo.svg')] bg-no-repeat bg-contain bg-center h-[18px] indent-[101%] whitespace-nowrap overflow-hidden lg:h-10 lg:w-[180px]">Coding
+          Home</a>
+      </h1>
+      <div class="lg:flex lg:items-center lg:w-[58%]">
+        <div class="hidden lg:flex lg:items-center lg:py-10 lg:px-12 lg:border-l lg:border-black lg:w-[56%]">
+          <input type="text" placeholder="搜尋作品名稱、藝術家名稱" class="bg-transparent p-0 text-dark border-0 mr-6 w-2/3 focus:ring-0 grow">
+          <i class="fa-solid fa-magnifying-glass text-lg"></i>
+        </div>
+        <div class="flex items-center lg:hidden">
+          <a href="#" class="searchBtn mr-6">
+            <i class="fa-solid fa-magnifying-glass text-lg"></i>
+          </a>
+          <a href="#" class="lg:hidden">
+            <i class="menuBtn fa-solid fa-bars text-[21px]"></i>
+            <i class="closeBtn hidden fa-solid fa-xmark text-base"></i>
+          </a>
+        </div>
+        <ul class="menuList hidden absolute top-full left-0 w-full bg-white p-3 pb-6 lg:static lg:block lg:flex lg:w-auto lg:p-0 lg:bg-light">
+          <li><a href="#" class="text-lg font-bold text-center bg-white pt-3 pb-6 border-b border-black lg:bg-light lg:border-l lg:border-b-0 lg:py-10 lg:px-12 lg:text-base  hover:text-primary">
+            探索
+          </a></li>
+          <li><a href="#" class="text-lg font-bold text-center bg-white py-6 lg:bg-light lg:py-10 lg:px-12 lg:border-l lg:border-black lg:text-base hover:text-primary">
+            市值
+          </a></li>
+          <li>
+            <a href="#" class="text-lg text-center bg-primary border border-black py-3 text-white lg:hidden">
+            連結錢包</a>
+            <a href="#" class="hidden lg:block lg:bg-light lg:py-10 lg:pl-12 lg:border-l lg:border-black hover:text-primary">
+              <i class="fa-solid fa-wallet text-[23px]"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- search mobile -->
+    <div class="searchBar hidden container bg-light fixed top-0 left-0 right-0 z-40 flex items-center py-4">
+      <a href="#" class="searchClose mr-4">
+        <i class="fa-solid fa-angle-left"></i>
+      </a>
+      <input type="text" placeholder="搜尋作品名稱、藝術家名稱" class="bg-transparent mr-4 grow p-0 text-sm text-dark border-0 focus:ring-0">
+      <a href="#">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </a>
+    </div>
   </header>
-
-  <%- contents %>
+  <div class="mt-[59px] lg:mt-[108px]">
+    <%- contents %>
+  </div>
 
   <footer class="footer border-t border-black">
     <div class="h-1 bg-black mt-2"></div>
