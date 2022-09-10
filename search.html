@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>藝術品系列-篩選</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Squada+One&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./assets/style/all.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+</head>
+
+<body class="bg-light">
+  <header class="bg-light fixed top-0 left-0 right-0 z-40  border-b border-black">
+    <nav class="container flex justify-between items-center py-4 lg:py-0">
+      <h1>
+        <a href="./index.html"
+          class="bg-[url('../images/logo.svg')] bg-no-repeat bg-contain bg-center h-[18px] indent-[101%] whitespace-nowrap overflow-hidden lg:h-10 lg:w-[180px]">Coding
+          Home</a>
+      </h1>
+      <div class="lg:flex lg:items-center lg:w-[58%]">
+        <div class="hidden lg:flex lg:items-center lg:py-10 lg:px-12 lg:border-l lg:border-black lg:w-[56%]">
+          <input type="text" placeholder="搜尋作品名稱、藝術家名稱" class="bg-transparent p-0 text-dark border-0 mr-6 w-2/3 focus:ring-0 grow">
+          <i class="fa-solid fa-magnifying-glass text-lg"></i>
+        </div>
+        <div class="flex items-center lg:hidden">
+          <a href="#" class="searchBtn mr-6">
+            <i class="fa-solid fa-magnifying-glass text-lg"></i>
+          </a>
+          <a href="#" class="lg:hidden">
+            <i class="menuBtn fa-solid fa-bars text-[21px]"></i>
+            <i class="closeBtn hidden fa-solid fa-xmark text-base"></i>
+          </a>
+        </div>
+        <ul class="menuList hidden absolute top-full left-0 w-full bg-white p-3 pb-6 lg:static lg:block lg:flex lg:w-auto lg:p-0 lg:bg-light">
+          <li><a href="#" class="text-lg font-bold text-center bg-white pt-3 pb-6 border-b border-black lg:bg-light lg:border-l lg:border-b-0 lg:py-10 lg:px-12 lg:text-base  hover:text-primary">
+            探索
+          </a></li>
+          <li><a href="#" class="text-lg font-bold text-center bg-white py-6 lg:bg-light lg:py-10 lg:px-12 lg:border-l lg:border-black lg:text-base hover:text-primary">
+            市值
+          </a></li>
+          <li>
+            <a href="#" class="text-lg text-center bg-primary border border-black py-3 text-white lg:hidden">
+            連結錢包</a>
+            <a href="#" class="hidden lg:block lg:bg-light lg:py-10 lg:pl-12 lg:border-l lg:border-black hover:text-primary">
+              <i class="fa-solid fa-wallet text-[23px]"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- search mobile -->
+    <div class="searchBar hidden container bg-light fixed top-0 left-0 right-0 z-40 flex items-center py-4">
+      <a href="#" class="searchClose mr-4">
+        <i class="fa-solid fa-angle-left"></i>
+      </a>
+      <input type="text" placeholder="搜尋作品名稱、藝術家名稱" class="bg-transparent mr-4 grow p-0 text-sm text-dark border-0 focus:ring-0">
+      <a href="#">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </a>
+    </div>
+  </header>
+  <div class="mt-[59px] lg:mt-[108px]">
+    <main class="relative">
+  <div class="mainContent">
+    <div class="container pt-6 pb-10 lg:pt-10 lg:pb-20">
+      <div class="lg:flex lg:flex-wrap lg:-mx-3">
+        <div class="hidden lg:block lg:w-3/12 lg:px-3">
+          <div class="bg-white border border-black lg:sticky lg:top-[108px]">
+            <!-- 網路 -->
+            <div class="p-6 border-b border-b-black">
+              <a href="#" class="flex justify-between items-center bg-white">
+                <p class="font-bold">網路</p>
+                <i class="fa-solid fa-angle-up"></i>
+                <i class="fa-solid fa-angle-down hidden"></i>
+              </a>
+              <div class="bg-white pt-4">
+                <ul>
+                  <li class="flex justify-between items-center mb-2">
+                    <label for="ether" class="flex justify-between items-center w-full">
+                      <span>以太坊</span>
+                      <input id="ether" type="checkbox" class="bg-transparent text-black focus:ring-0 focus:ring-offset-0">
+                    </label>
+                  </li>
+                  <li class="flex justify-between items-center">
+                    <label for="BNB" class="flex justify-between items-center w-full">
+                      <span>BNB 智能鏈</span>
+                      <input id="BNB" type="checkbox" class="bg-transparent text-black focus:ring-0 focus:ring-offset-0" checked>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- 狀態 -->
+            <div class="p-6 border-b border-b-black">
+              <a href="#" class="flex justify-between items-center bg-white">
+                <p class="font-bold">狀態</p>
+                <i class="fa-solid fa-angle-up"></i>
+                <i class="fa-solid fa-angle-down hidden"></i>
+              </a>
+              <div class="bg-white pt-4">
+                <ul>
+                  <li class="flex justify-between items-center mb-2">
+                    <label for="display" class="flex justify-between items-center w-full">
+                      <span>僅展示</span>
+                      <input id="display" type="checkbox" class="bg-transparent text-black focus:ring-0 focus:ring-offset-0">
+                    </label>
+                  </li>
+                  <li class="flex justify-between items-center">
+                    <label for="auction" class="flex justify-between items-center w-full">
+                      <span>拍賣中</span>
+                      <input id="auction" type="checkbox" class="bg-transparent text-black focus:ring-0 focus:ring-offset-0" checked>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- 價格 -->
+            <div class="p-6 border-b border-b-black">
+              <a href="#" class="flex justify-between items-center bg-white">
+                <p class="font-bold">價格</p>
+                <i class="fa-solid fa-angle-up"></i>
+                <i class="fa-solid fa-angle-down hidden"></i>
+              </a>
+              <div class="bg-white pt-4 flex items-center">
+                <select class="py-2 pl-2 mr-2 focus:border-gray-500 focus:ring focus:ring-gray-500 focus:ring-opacity-5">
+                  <option>ETH</option>
+                  <option>ETH</option>
+                  <option>ETH</option>
+                  <option>ETH</option>
+                </select>
+                <input type="number" class="w-[28.3%] mr-2 focus:border-gray-500 focus:ring focus:ring-gray-500 focus:ring-opacity-5" min="0">
+                <span class="inline-block mr-2">－</span>
+                <input type="number" class="w-[28.3%] focus:border-gray-500 focus:ring focus:ring-gray-500 focus:ring-opacity-5" min="0">
+              </div>
+            </div>
+            <!-- 屬性 -->
+            <div class="p-6">
+              <h3 class="text-dark mb-6">屬性</h3>
+              <!-- 品種 -->
+              <a href="#" class="flex justify-between items-center bg-white">
+                <p class="font-bold">品種</p>
+                <i class="fa-solid fa-angle-up"></i>
+                <i class="fa-solid fa-angle-down hidden"></i>
+              </a>
+              <div class="bg-white pt-4 mb-6">
+                <ul>
+                  <li class="flex justify-between items-center mb-2">
+                    <label for="bird1" class="flex justify-between items-center w-full">
+                      <span>八哥</span>
+                      <input id="bird1" type="checkbox" class="bg-transparent text-black focus:ring-0 focus:ring-offset-0">
+                    </label>
+                  </li>
+                  <li class="flex justify-between items-center mb-2">
+                    <label for="bird2" class="flex justify-between items-center w-full">
+                      <span>虎皮鸚鵡</span>
+                      <input id="bird2" type="checkbox" class="bg-transparent text-black focus:ring-0 focus:ring-offset-0"
+                        checked>
+                    </label>
+                  </li>
+                  <li class="flex justify-between items-center mb-2">
+                    <label for="bird3" class="flex justify-between items-center w-full">
+                      <span>太平鳥</span>
+                      <input id="bird3" type="checkbox" class="bg-transparent text-black focus:ring-0 focus:ring-offset-0">
+                    </label>
+                  </li>
+                  <li class="flex justify-between items-center">
+                    <label for="bird4" class="flex justify-between items-center w-full">
+                      <span>畫眉鳥</span>
+                      <input id="bird4" type="checkbox" class="bg-transparent text-black focus:ring-0 focus:ring-offset-0">
+                    </label>
+                  </li>
+                </ul>
+              </div>
+              <!-- 鳥的數量 -->
+              <a href="#" class="flex justify-between items-center bg-white mb-6">
+                <p class="font-bold">鳥的數量</p>
+                <i class="fa-solid fa-angle-up hidden"></i>
+                <i class="fa-solid fa-angle-down"></i>
+              </a>
+              <!-- 是否有花草 -->
+              <a href="#" class="flex justify-between items-center bg-white mb-6">
+                <p class="font-bold">是否有花草</p>
+                <i class="fa-solid fa-angle-up hidden"></i>
+                <i class="fa-solid fa-angle-down"></i>
+              </a>
+              <!-- 鳥的顏色 -->
+              <a href="#" class="flex justify-between items-center bg-white">
+                <p class="font-bold">鳥的顏色</p>
+                <i class="fa-solid fa-angle-up hidden"></i>
+                <i class="fa-solid fa-angle-down"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-9/12 lg:px-3">
+          <div class="flex items-center mb-2">
+            <img class="h-8 w-8 rounded-full mr-4" src="./assets/images/artist01.jpg" alt="藝術家">
+            <h3>Michael</h3>
+          </div>
+          <div class="lg:flex lg:justify-between lg:items-end lg:mb-10">
+            <div class="lg:w-[52.8%]">
+              <h2 class="font-bold text-3xxl mb-2">我家外面的鳥</h2>
+              <p class="mb-4 lg:mb-0">家門前每天都有不同的小鳥，大多數的小鳥都有特殊能力，特殊能力是什麼我就不說了，希望大家能從作品感受到小鳥的快樂。</p>
+            </div>
+            <ul class="flex border border-black mb-10 lg:w-[41.8%] lg:mb-0">
+              <li class="bg-white py-4 w-1/4 border-r border-black">
+                <div class="text-center">
+                  <p class="text-sm mb-1 lg:text-base">項目</p>
+                  <p class="text-xl lg:text-2xl">6.4 k</p>
+                </div>
+              </li>
+              <li class="bg-white py-4 w-1/4 border-r border-black">
+                <div class="text-center bg-white -mx-[1px]">
+                  <p class="text-sm mb-1 lg:text-base">擁有者</p>
+                  <p class="text-xl lg:text-2xl">2.5 k</p>
+                </div>
+              </li>
+              <li class="bg-white py-4 w-1/4 border-r border-black">
+                <div class="text-center bg-white -mx-[1px]">
+                  <p class="text-sm mb-1 lg:text-base">底價</p>
+                  <div class="flex justify-center items-center text-xl lg:text-2xl">
+                    <i class="fa-brands fa-ethereum mr-1"></i>
+                    <p>1.38 k</p>
+                  </div>
+                </div>
+              </li>
+              <li class="bg-white py-4 w-1/4">
+                <div class="text-center">
+                  <p class="text-sm mb-1 lg:text-base">總額</p>
+                  <p class="text-xl lg:text-2xl">2.8 k</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="text-right mb-6 lg:mb-10">
+            <a href="#" class="inline-block border border-black bg-white py-2 px-[38px]">
+              最新上架
+              <i class="fa-solid fa-sort ml-2"></i>
+            </a>
+          </div>
+          <div class="grid -mx-3">
+            <!-- width of .grid-sizer used for columnWidth -->
+            <div class="grid-sizer w-1/2 px-3 lg:w-1/3"></div>
+            <div class="grid-item mb-4 w-1/2 px-3 lg:w-1/3 lg:mb-12">
+              <a href="#" class="group bg-white p-2 lg:p-6">
+                <div class="bg-[url('../images/art20.jpg')] bg-no-repeat bg-center bg-cover relative h-[139px] lg:h-[254px]">
+                  <div class="hidden bg-black/[0.7] absolute top-0 bottom-0 left-0 right-0 p-4 z-20 lg:group-hover:block">
+                    <div class="border border-white p-4 h-full text-white flex flex-col justify-between items-start">
+                      <div>
+                        <p class="mb-4">唯一想擁有的人，唯一不可以擁有的</p>
+                        <p>
+                          <i class="fa-brands fa-ethereum mr-2"></i>
+                          300
+                        </p>
+                      </div>
+                      <div
+                        class="relative bg-white inline-block border border-black text-lg py-2 px-12 text-black leading-4.5 ml-auto after:absolute after:content-[''] after:w-0 after:h-0 after:bottom-0 after:right-0 after:border-r-[16px] after:border-r-primary after:border-t-[16px] after:border-t-transparent hover:bg-primary hover:text-white after:hover:border-r-black">
+                        MORE</div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <p class="p-2 lg:px-0 lg:py-4 lg:border-b lg:border-black lg:font-bold">這兩隻也太像企鵝了吧</p>
+            </div>
+            <div class="grid-item mb-4 w-1/2 px-3 lg:w-1/3 lg:mb-12">
+              <a href="#" class="group bg-white p-2 lg:p-6">
+                <div class="bg-[url('../images/art21.jpg')] bg-no-repeat bg-center relative bg-cover h-[151px] lg:h-[327px]">
+                  <div class="hidden bg-black/[0.7] absolute top-0 bottom-0 left-0 right-0 p-4 z-20 lg:group-hover:block">
+                    <div class="border border-white p-4 h-full text-white flex flex-col justify-between items-start">
+                      <div>
+                        <p class="mb-4">唯一想擁有的人，唯一不可以擁有的</p>
+                        <p>
+                          <i class="fa-brands fa-ethereum mr-2"></i>
+                          300
+                        </p>
+                      </div>
+                      <div
+                        class="relative bg-white inline-block border border-black text-lg py-2 px-12 text-black leading-4.5 ml-auto after:absolute after:content-[''] after:w-0 after:h-0 after:bottom-0 after:right-0 after:border-r-[16px] after:border-r-primary after:border-t-[16px] after:border-t-transparent hover:bg-primary hover:text-white after:hover:border-r-black">
+                        MORE</div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <p class="p-2 lg:px-0 lg:py-4 lg:border-b lg:border-black lg:font-bold">兩情相悅</p>
+            </div>
+            <div class="grid-item mb-4 w-1/2 px-3 lg:w-1/3 lg:mb-12">
+              <a href="#" class="group bg-white p-2 lg:p-6">
+                <div class="bg-[url('../images/art22.jpg')] bg-no-repeat bg-center bg-cover relative h-[93px] lg:h-[254px]">
+                  <div class="hidden bg-black/[0.7] absolute top-0 bottom-0 left-0 right-0 p-4 z-20 lg:group-hover:block">
+                    <div class="border border-white p-4 h-full text-white flex flex-col justify-between items-start">
+                      <div>
+                        <p class="mb-4">唯一想擁有的人，唯一不可以擁有的</p>
+                        <p>
+                          <i class="fa-brands fa-ethereum mr-2"></i>
+                          300
+                        </p>
+                      </div>
+                      <div
+                        class="relative bg-white inline-block border border-black text-lg py-2 px-12 text-black leading-4.5 ml-auto after:absolute after:content-[''] after:w-0 after:h-0 after:bottom-0 after:right-0 after:border-r-[16px] after:border-r-primary after:border-t-[16px] after:border-t-transparent hover:bg-primary hover:text-white after:hover:border-r-black">
+                        MORE</div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <p class="p-2 lg:px-0 lg:py-4 lg:border-b lg:border-black lg:font-bold">群聚的小鳥們</p>
+            </div>
+            <div class="grid-item mb-4 w-1/2 px-3 lg:w-1/3 lg:mb-12">
+              <img src="./assets/images/art27.jpg" alt="我真的受傷了" class="hidden p-6 bg-white">
+              <a href="#" class="group bg-white p-2 lg:p-6">
+                <div class="bg-[url('../images/art23.jpg')] bg-no-repeat bg-center bg-cover relative h-[139px] lg:h-[254px]">
+                  <div class="hidden bg-black/[0.7] absolute top-0 bottom-0 left-0 right-0 p-4 z-20 lg:group-hover:block">
+                    <div class="border border-white p-4 h-full text-white flex flex-col justify-between items-start">
+                      <div>
+                        <p class="mb-4">唯一想擁有的人，唯一不可以擁有的</p>
+                        <p>
+                          <i class="fa-brands fa-ethereum mr-2"></i>
+                          300
+                        </p>
+                      </div>
+                      <div
+                        class="relative bg-white inline-block border border-black text-lg py-2 px-12 text-black leading-4.5 ml-auto after:absolute after:content-[''] after:w-0 after:h-0 after:bottom-0 after:right-0 after:border-r-[16px] after:border-r-primary after:border-t-[16px] after:border-t-transparent hover:bg-primary hover:text-white after:hover:border-r-black">
+                        MORE</div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <p class="p-2 lg:px-0 lg:py-4 lg:border-b lg:border-black lg:font-bold">與你分享的快樂勝過獨自擁有</p>
+            </div>
+            <div class="grid-item w-1/2 px-3 lg:w-1/3">
+              <a href="#" class="group bg-white p-2 lg:p-6">
+                <div class="bg-[url('../images/art25.jpg')] bg-no-repeat bg-center bg-cover relative h-[173px] lg:h-[395px]">
+                  <div class="hidden bg-black/[0.7] absolute top-0 bottom-0 left-0 right-0 p-4 z-20 lg:group-hover:block">
+                    <div class="border border-white p-4 h-full text-white flex flex-col justify-between items-start">
+                      <div>
+                        <p class="mb-4">唯一想擁有的人，唯一不可以擁有的</p>
+                        <p>
+                          <i class="fa-brands fa-ethereum mr-2"></i>
+                          300
+                        </p>
+                      </div>
+                      <div
+                        class="relative bg-white inline-block border border-black text-lg py-2 px-12 text-black leading-4.5 ml-auto after:absolute after:content-[''] after:w-0 after:h-0 after:bottom-0 after:right-0 after:border-r-[16px] after:border-r-primary after:border-t-[16px] after:border-t-transparent hover:bg-primary hover:text-white after:hover:border-r-black">
+                        MORE</div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <p class="p-2 lg:px-0 lg:py-4 lg:border-b lg:border-black lg:font-bold">一大一小兩個恰恰好</p>
+            </div>
+            <div class="grid-item w-1/2 px-3 lg:w-1/3">
+              <a href="#" class="group bg-white p-2 lg:p-6">
+                <div class="bg-[url('../images/art24.jpg')] bg-no-repeat bg-center bg-cover relative h-[192px] lg:h-[368px]">
+                  <div class="hidden bg-black/[0.7] absolute top-0 bottom-0 left-0 right-0 p-4 z-20 lg:group-hover:block">
+                    <div class="border border-white p-4 h-full text-white flex flex-col justify-between items-start">
+                      <div>
+                        <p class="mb-4">唯一想擁有的人，唯一不可以擁有的</p>
+                        <p>
+                          <i class="fa-brands fa-ethereum mr-2"></i>
+                          300
+                        </p>
+                      </div>
+                      <div
+                        class="relative bg-white inline-block border border-black text-lg py-2 px-12 text-black leading-4.5 ml-auto after:absolute after:content-[''] after:w-0 after:h-0 after:bottom-0 after:right-0 after:border-r-[16px] after:border-r-primary after:border-t-[16px] after:border-t-transparent hover:bg-primary hover:text-white after:hover:border-r-black">
+                        MORE</div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <p class="p-2 lg:px-0 lg:py-4 lg:border-b lg:border-black lg:font-bold">會唱metal的鳥</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="searchArtistBtn fixed bottom-8 left-1/2 -translate-x-2/4 inline-block bg-black text-white py-2 px-12 lg:hidden">
+      篩選條件
+      <span>2</span>
+    </a>
+  </div>
+  <!-- 篩選條件 mobile -->
+  <div class="searchArtist hidden bg-white absolute inset-x-0 -top-[59px] z-50">
+    <div class="relative py-4 text-center border-b border-black">
+      <h3 class="text-xl">篩選條件</h3>
+      <a href="#" class="searchArtistBtn absolute right-3 top-1/2 -translate-y-2/4 "><i class="fa-solid fa-xmark text-lg"></i></a>
+    </div>
+    <div class="container">
+      <!-- 網路 -->
+      <div class="py-6 border-b border-b-black">
+        <a href="#" class="flex justify-between items-center bg-white">
+          <p class="font-bold">網路</p>
+          <i class="fa-solid fa-angle-up"></i>
+          <i class="fa-solid fa-angle-down hidden"></i>
+        </a>
+        <div class="bg-white pt-4">
+          <ul>
+            <li class="flex justify-between items-center mb-2">
+              <label for="ether_m" class="flex justify-between items-center w-full">
+                <span>以太坊</span>
+                <input id="ether_m" type="checkbox" class="bg-transparent text-black focus:ring-0 focus:ring-offset-0">
+              </label>
+            </li>
+            <li class="flex justify-between items-center">
+              <label for="BNB_m" class="flex justify-between items-center w-full">
+                <span>BNB 智能鏈</span>
+                <input id="BNB_m" type="checkbox" class="bg-transparent text-black focus:ring-0 focus:ring-offset-0" checked>
+              </label>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- 狀態 -->
+      <div class="py-6 border-b border-b-black">
+        <a href="#" class="flex justify-between items-center bg-white">
+          <p class="font-bold">狀態</p>
+          <i class="fa-solid fa-angle-up"></i>
+          <i class="fa-solid fa-angle-down hidden"></i>
+        </a>
+        <div class="bg-white pt-4">
+          <ul>
+            <li class="flex justify-between items-center mb-2">
+              <label for="display_m" class="flex justify-between items-center w-full">
+                <span>僅展示</span>
+                <input id="display_m" type="checkbox" class="bg-transparent text-black focus:ring-0 focus:ring-offset-0">
+              </label>
+            </li>
+            <li class="flex justify-between items-center">
+              <label for="auction_m" class="flex justify-between items-center w-full">
+                <span>拍賣中</span>
+                <input id="auction_m" type="checkbox" class="bg-transparent text-black focus:ring-0 focus:ring-offset-0"
+                  checked>
+              </label>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- 價格 -->
+      <div class="py-6 border-b border-b-black">
+        <a href="#" class="flex justify-between items-center bg-white">
+          <p class="font-bold">價格</p>
+          <i class="fa-solid fa-angle-up"></i>
+          <i class="fa-solid fa-angle-down hidden"></i>
+        </a>
+        <div class="bg-white pt-4 flex items-center">
+          <select class="py-2 pl-2 mr-2 focus:border-gray-500 focus:ring focus:ring-gray-500 focus:ring-opacity-5">
+            <option>ETH</option>
+            <option>ETH</option>
+            <option>ETH</option>
+            <option>ETH</option>
+          </select>
+          <input type="number"
+            class="w-[21.7%] mr-2 focus:border-gray-500 focus:ring focus:ring-gray-500 focus:ring-opacity-5" min="0">
+          <span class="inline-block mr-2">－</span>
+          <input type="number" class="w-[21.7%] focus:border-gray-500 focus:ring focus:ring-gray-500 focus:ring-opacity-5"
+            min="0">
+        </div>
+      </div>
+      <!-- 屬性 -->
+      <div class="py-6">
+        <h3 class="text-dark mb-6">屬性</h3>
+        <!-- 品種 -->
+        <a href="#" class="flex justify-between items-center bg-white">
+          <p class="font-bold">品種</p>
+          <i class="fa-solid fa-angle-up"></i>
+          <i class="fa-solid fa-angle-down hidden"></i>
+        </a>
+        <div class="bg-white pt-4 mb-6">
+          <ul>
+            <li class="flex justify-between items-center mb-2">
+              <label for="bird1_m" class="flex justify-between items-center w-full">
+                <span>八哥</span>
+                <input id="bird1_m" type="checkbox" class="bg-transparent text-black focus:ring-0 focus:ring-offset-0">
+              </label>
+            </li>
+            <li class="flex justify-between items-center mb-2">
+              <label for="bird2_m" class="flex justify-between items-center w-full">
+                <span>虎皮鸚鵡</span>
+                <input id="bird2_m" type="checkbox" class="bg-transparent text-black focus:ring-0 focus:ring-offset-0"
+                  checked>
+              </label>
+            </li>
+            <li class="flex justify-between items-center mb-2">
+              <label for="bird3_m" class="flex justify-between items-center w-full">
+                <span>太平鳥</span>
+                <input id="bird3_m" type="checkbox" class="bg-transparent text-black focus:ring-0 focus:ring-offset-0">
+              </label>
+            </li>
+            <li class="flex justify-between items-center">
+              <label for="bird4_m" class="flex justify-between items-center w-full">
+                <span>畫眉鳥</span>
+                <input id="bird4_m" type="checkbox" class="bg-transparent text-black focus:ring-0 focus:ring-offset-0">
+              </label>
+            </li>
+          </ul>
+        </div>
+        <!-- 鳥的數量 -->
+        <a href="#" class="flex justify-between items-center bg-white mb-6">
+          <p class="font-bold">鳥的數量</p>
+          <i class="fa-solid fa-angle-up hidden"></i>
+          <i class="fa-solid fa-angle-down"></i>
+        </a>
+        <!-- 是否有花草 -->
+        <a href="#" class="flex justify-between items-center bg-white mb-6">
+          <p class="font-bold">是否有花草</p>
+          <i class="fa-solid fa-angle-up hidden"></i>
+          <i class="fa-solid fa-angle-down"></i>
+        </a>
+        <!-- 鳥的顏色 -->
+        <a href="#" class="flex justify-between items-center bg-white">
+          <p class="font-bold">鳥的顏色</p>
+          <i class="fa-solid fa-angle-up hidden"></i>
+          <i class="fa-solid fa-angle-down"></i>
+        </a>
+      </div>
+    </div>
+    <a href="#" class="searchArtistBtn text-center text-lg text-white bg-primary border border-black py-1.5">確認</a>
+  </div>
+</main>
+  </div>
+
+  <footer class="footer border-t border-black">
+    <div class="h-1 bg-black mt-2"></div>
+    <p class="text-center py-6">© ART NFT. All Rights Reserved</p>
+  </footer>
+  
+  <script src="./assets/js/vendors.js"></script>
+  <script
+      src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+      integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"
+      crossorigin="anonymous"
+      async
+    ></script>
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
