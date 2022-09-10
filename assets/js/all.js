@@ -54,5 +54,34 @@ $(document).ready(function () {
     $('.artwork').hide();
     $('.artworkBtn').addClass('text-dark');
   });
+  /* 藝術家介紹 end */
+
+  /* 藝術品介紹 */
+
+  $('.artAttrBtn').click(function (e) {
+    e.preventDefault();
+    $('.artAttr').slideToggle();
+    $('.artAttrBtn .fa-angle-up').toggleClass('hidden');
+    $('.artAttrBtn .fa-angle-down').toggleClass('hidden');
+  });
+  $('.priceBtn').click(function (e) {
+    e.preventDefault();
+    $('.price').slideToggle();
+    $('.priceBtn .fa-angle-up').toggleClass('hidden');
+    $('.priceBtn .fa-angle-down').toggleClass('hidden');
+  });
+  $('.basicinfoBtn').click(function (e) {
+    e.preventDefault();
+    $('.basicinfo').slideToggle();
+    $('.basicinfoBtn .fa-angle-up').toggleClass('hidden');
+    $('.basicinfoBtn .fa-angle-down').toggleClass('hidden');
+  });
+  $('.historyBtn').click(function (e) {
+    e.preventDefault();
+    $('.history').slideToggle();
+    $('.historyBtn .fa-angle-up').toggleClass('hidden');
+    $('.historyBtn .fa-angle-down').toggleClass('hidden');
+  });
+  /* 藝術品介紹 end */
 });
 //# sourceMappingURL=all.js.map

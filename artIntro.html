@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>藝術品介紹</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Squada+One&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./assets/style/all.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+</head>
+
+<body class="bg-light">
+  <header class="bg-light fixed top-0 left-0 right-0 z-40  border-b border-black">
+    <nav class="container flex justify-between items-center py-4 lg:py-0">
+      <h1>
+        <a href="./index.html"
+          class="bg-[url('../images/logo.svg')] bg-no-repeat bg-contain bg-center h-[18px] indent-[101%] whitespace-nowrap overflow-hidden lg:h-10 lg:w-[180px]">Coding
+          Home</a>
+      </h1>
+      <div class="lg:flex lg:items-center lg:w-[58%]">
+        <div class="hidden lg:flex lg:items-center lg:py-10 lg:px-12 lg:border-l lg:border-black lg:w-[56%]">
+          <input type="text" placeholder="搜尋作品名稱、藝術家名稱" class="bg-transparent p-0 text-dark border-0 mr-6 w-2/3 focus:ring-0 grow">
+          <i class="fa-solid fa-magnifying-glass text-lg"></i>
+        </div>
+        <div class="flex items-center lg:hidden">
+          <a href="#" class="searchBtn mr-6">
+            <i class="fa-solid fa-magnifying-glass text-lg"></i>
+          </a>
+          <a href="#" class="lg:hidden">
+            <i class="menuBtn fa-solid fa-bars text-[21px]"></i>
+            <i class="closeBtn hidden fa-solid fa-xmark text-base"></i>
+          </a>
+        </div>
+        <ul class="menuList hidden absolute top-full left-0 w-full bg-white p-3 pb-6 lg:static lg:block lg:flex lg:w-auto lg:p-0 lg:bg-light">
+          <li><a href="#" class="text-lg font-bold text-center bg-white pt-3 pb-6 border-b border-black lg:bg-light lg:border-l lg:border-b-0 lg:py-10 lg:px-12 lg:text-base  hover:text-primary">
+            探索
+          </a></li>
+          <li><a href="#" class="text-lg font-bold text-center bg-white py-6 lg:bg-light lg:py-10 lg:px-12 lg:border-l lg:border-black lg:text-base hover:text-primary">
+            市值
+          </a></li>
+          <li>
+            <a href="#" class="text-lg text-center bg-primary border border-black py-3 text-white lg:hidden">
+            連結錢包</a>
+            <a href="#" class="hidden lg:block lg:bg-light lg:py-10 lg:pl-12 lg:border-l lg:border-black hover:text-primary">
+              <i class="fa-solid fa-wallet text-[23px]"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- search mobile -->
+    <div class="searchBar hidden container bg-light fixed top-0 left-0 right-0 z-40 flex items-center py-4">
+      <a href="#" class="searchClose mr-4">
+        <i class="fa-solid fa-angle-left"></i>
+      </a>
+      <input type="text" placeholder="搜尋作品名稱、藝術家名稱" class="bg-transparent mr-4 grow p-0 text-sm text-dark border-0 focus:ring-0">
+      <a href="#">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </a>
+    </div>
+  </header>
+  <div class="mt-[59px] lg:mt-[108px]">
+    <main>
+  <div class="container pt-8 pb-10 lg:pt-10 lg:pb-20">
+    <div class="mb-6 lg:flex lg:-mx-3">
+      <div class="lg:w-1/2 lg:px-3">
+        <div class="h-[288px] bg-[url('../images/art21.jpg')] bg-cover bg-center bg-no-repeat mb-6 lg:mb-0  lg:h-[546px]"></div>
+      </div>
+      <div class="lg:w-1/2 lg:px-3 lg:flex lg:flex-col">
+        <div class="bg-white p-4 pb-6 border border-black border-b-0 lg:px-10 lg:pb-8">
+          <div class="lg:flex lg:justify-between lg:flex-row-reverse lg:items-center lg:mb-4">
+            <div class="flex items-center">
+              <img class="h-8 w-8 rounded-full mr-2" src="./assets/images/artist01.jpg" alt="藝術家">
+              <h3>Michael</h3>
+            </div>
+            <h2 class="font-bold text-3xxl mb-4 lg:mb-0 lg:text-5xl">兩情相悅</h2>
+          </div>
+          <div class="flex justify-between items-end">
+            <div>
+              <p class="text-dark text-sm mb-2">最高出價</p>
+              <div class="flex items-center">
+                <img class="h-8 w-8 rounded-full mr-2" src="./assets/images/user01.jpg" alt="藝術家">
+                <i class="fa-solid fa-arrow-right mr-2"></i>
+                <p>0.044Eth</p>
+              </div>
+            </div>
+            <a href="#" class="border border-black text-white bg-primary py-2 px-12">出價</a>
+          </div>
+        </div>
+        <div class="bg-white border border-black py-6 px-4 lg:pt-8 lg:px-10 lg:h-full">
+          <p class="mb-4">3/14情人節外面剛好有兩隻鳥，也在過情人節。</p>
+          <p class="mb-4">而且其中一隻竟然有梳油頭，不知道是不是有用定型液，他們感情真好，出門還會特別打扮，看著看著不禁思考，我怎麼會變這樣？</p>
+          <p>好羨慕啊，我也要有這樣兩情相悅的另一半。</p>
+        </div>
+      </div>
+    </div>
+    <div class="grid -mx-3 mb-10">
+      <div class="grid-sizer w-full px-3 lg:w-1/2"></div>
+      <!-- 屬性 -->
+      <div class="grid-item w-full px-3 mb-6 lg:w-1/2">
+        <a href="#" class="artAttrBtn flex justify-between items-center p-4 border border-black bg-white lg:p-6">
+          <p class="font-bold">屬性</p>
+          <i class="fa-solid fa-angle-up"></i>
+          <i class="fa-solid fa-angle-down hidden"></i>
+        </a>
+        <div class="artAttr bg-white border border-black border-t-0 py-6 px-4 lg:px-6">
+          <ul>
+            <li class="flex justify-between items-center border-b border-light pb-2 mb-2">
+              <p>品種</p>
+              <p class="text-dark">青藍金剛鸚鵡</p>
+            </li>
+            <li class="flex justify-between items-center border-b border-light pb-2 mb-2">
+              <p>鳥的數量</p>
+              <p class="text-dark">2隻</p>
+            </li>
+            <li class="flex justify-between items-center border-b border-light pb-2 mb-2">
+              <p>是否有花草</p>
+              <p class="text-dark">是</p>
+            </li>
+            <li class="flex justify-between items-center">
+              <p>鳥的顏色</p>
+              <p class="text-dark">藍色</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- 出價 -->
+      <div class="grid-item w-full px-3 mb-6 lg:w-1/2">
+        <a href="#" class="priceBtn flex justify-between items-center p-4 border border-black bg-white lg:p-6">
+          <p class="font-bold">出價</p>
+          <i class="fa-solid fa-angle-up"></i>
+          <i class="fa-solid fa-angle-down hidden"></i>
+        </a>
+        <div class="price bg-white border border-black border-t-0 py-6 px-4 lg:px-6">
+          <table class="w-full">
+            <thead>
+              <tr>
+                <th class="text-sm text-center bg-light py-2 w-1/2">價格</th>
+                <th class="text-sm text-center bg-light py-2 w-1/2">期限</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b border-light">
+                <td class="flex items-center py-2">
+                  <img class="h-8 w-8 rounded-full mr-2" src="./assets/images/artist03.jpg" alt="藝術家">
+                  <i class="fa-solid fa-arrow-right mr-2"></i>
+                  <p>0.044Eth</p>
+                </td>
+                <td class="text-dark text-right">3個月後</td>
+              </tr>
+              <tr class="border-b border-light">
+                <td class="flex items-center py-2">
+                  <img class="h-8 w-8 rounded-full mr-2" src="./assets/images/user02.jpg" alt="藝術家">
+                  <i class="fa-solid fa-arrow-right mr-2"></i>
+                  <p>0.054Eth</p>
+                </td>
+                <td class="text-dark text-right">1個月後</td>
+              </tr>
+              <tr>
+                <td class="flex items-center pt-2">
+                  <img class="h-8 w-8 rounded-full mr-2" src="./assets/images/user03.jpg" alt="藝術家">
+                  <i class="fa-solid fa-arrow-right mr-2"></i>
+                  <p>0.044Eth</p>
+                </td>
+                <td class="text-dark text-right">2週後</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!-- 基本資訊 -->
+      <div class="grid-item w-full px-3 mb-6 lg:w-1/2 lg:mb-0">
+        <a href="#" class="basicinfoBtn flex justify-between items-center p-4 border border-black bg-white lg:p-6">
+          <p class="font-bold">基本資訊</p>
+          <i class="fa-solid fa-angle-up"></i>
+          <i class="fa-solid fa-angle-down hidden"></i>
+        </a>
+        <div class="basicinfo bg-white border border-black border-t-0 py-6 px-4 lg:px-6">
+          <ul>
+            <li class="flex justify-between items-center border-b border-light pb-2 mb-2">
+              <p>擁有者</p>
+              <p class="text-dark">0xa543x…1283</p>
+            </li>
+            <li class="flex justify-between items-center border-b border-light pb-2 mb-2">
+              <p>代幣ID</p>
+              <p class="text-dark">#1234</p>
+            </li>
+            <li class="flex justify-between items-center">
+              <p>合約地址</p>
+              <p class="text-dark">青藍金剛鸚鵡</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- 交易歷史 -->
+      <div class="grid-item w-full px-3 lg:w-1/2">
+        <a href="#" class="historyBtn flex justify-between items-center p-4 border border-black bg-white lg:p-6">
+          <p class="font-bold">出價</p>
+          <i class="fa-solid fa-angle-up"></i>
+          <i class="fa-solid fa-angle-down hidden"></i>
+        </a>
+        <div class="history bg-white border border-black border-t-0 py-6 px-4 lg:px-6">
+          <table class="w-full">
+            <thead>
+              <tr>
+                <th class="text-left text-sm bg-light py-1.5 px-4">事件</th>
+                <th class="text-left text-sm bg-light py-1.5 px-4">價格</th>
+                <th class="text-left text-sm bg-light py-1.5 px-4">從</th>
+                <th class="text-left text-sm bg-light py-1.5 px-4">時間</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b border-light">
+                <td class="py-2 px-4">上架</td>
+                <td class="py-2 px-4">2nb</td>
+                <td class="py-2 px-4"><img class="h-8 w-8 rounded-full" src="./assets/images/artist03.jpg" alt="藝術家"></td>
+                <td class="text-dark py-2 px-4">14小時前</td>
+              </tr>
+              <tr class="border-b border-light">
+                <td class="pt-2 px-4">出價</td>
+                <td class="pt-2 px-4">2nb</td>
+                <td class="pt-2 px-4"><img class="h-8 w-8 rounded-full" src="./assets/images/artist01.jpg" alt="藝術家"></td>
+                <td class="text-dark pt-2 px-4">2週後</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Others 其餘作品-->
+    <section>
+      <div class="flex justify-between items-end border-b border-black mb-6 lg:mb-12">
+        <h2 class="author text-3xxl leading-8 mb-2 lg:flex lg:items-end lg:text-5xl lg:leading-12 lg:mb-4">
+          Other
+          <span class="hidden lg:inline-block text-xl font-bold ml-4">其餘作品</span>
+        </h2>
+        <a href="#"
+          class="relative inline-block text-lg py-2 px-12 leading-4.5 after:absolute after:content-[''] after:w-0 after:h-0 after:bottom-0 after:right-0 after:border-r-[16px] after:border-r-primary after:border-t-[16px] after:border-t-transparent after:hover:border-r-black hover:bg-primary hover:text-white hover:border hover:border-black hover:border-b-0">MORE</a>
+      </div>
+      <div class="swiper othersSwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="bg-white p-2 mb-4 lg:p-6">
+              <div class="h-[164px] bg-[url('../images/art22.jpg')] bg-no-repeat bg-center bg-cover lg:h-[327px]"></div>
+            </div>
+            <p class="text-sm text-center lg:text-base lg:text-left lg:pb-2 lg:border-b lg:border-black">群聚的小鳥們</p>
+          </div>
+          <div class="swiper-slide">
+            <div class="bg-white p-2 mb-4 lg:p-6">
+              <div class="h-[164px] bg-[url('../images/art27.jpg')] bg-no-repeat bg-center bg-cover lg:h-[327px]"></div>
+            </div>
+            <p class="text-sm text-center lg:text-base lg:text-left lg:pb-2 lg:border-b lg:border-black">我真的受傷了</p>
+          </div>
+          <div class="swiper-slide">
+            <div class="bg-white p-2 mb-4 lg:p-6">
+              <div class="h-[164px] bg-[url('../images/art20.jpg')] bg-no-repeat bg-center bg-cover lg:h-[327px]"></div>
+            </div>
+            <p class="text-sm text-center lg:text-base lg:text-left lg:pb-2 lg:border-b lg:border-black">這兩隻也太像企鵝了吧</p>
+          </div>
+          <div class="swiper-slide">
+            <div class="bg-white p-2 mb-4 lg:p-6">
+              <div class="h-[164px] bg-[url('../images/art22.jpg')] bg-no-repeat bg-center bg-cover lg:h-[327px]"></div>
+            </div>
+            <p class="text-sm text-center lg:text-base lg:text-left lg:pb-2 lg:border-b lg:border-black">群聚囉～小鳥</p>
+          </div>
+        </div>
+        <div class="swiper-pagination static mt-6 lg:mt-12"></div>
+      </div>
+    </section>
+  </div>
+</main>
+
+<script>
+  const swiper = new Swiper('.othersSwiper', {
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true
+    },
+    slidesPerView: 2,
+    spaceBetween: 24,
+    breakpoints: {
+      960: {
+        slidesPerView: 4,
+        spaceBetween: 24
+      }
+    }
+  });
+</script>
+  </div>
+
+  <footer class="footer border-t border-black">
+    <div class="h-1 bg-black mt-2"></div>
+    <p class="text-center py-6">© ART NFT. All Rights Reserved</p>
+  </footer>
+  
+  <script src="./assets/js/vendors.js"></script>
+  <script
+      src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+      integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"
+      crossorigin="anonymous"
+      async
+    ></script>
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
