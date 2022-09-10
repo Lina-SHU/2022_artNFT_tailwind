@@ -24,12 +24,12 @@
   background: #E6553B;
 }
 
-.swiper-slide:not(.swiper-slide-active) {
+.artistSwiper .swiper-slide:not(.swiper-slide-active) {
   transition: all 200ms linear;
   transform: scale(0.8);
 }
 
-.swiper-slide:not(.swiper-slide-active) .notActive {
+.artistSwiper .swiper-slide:not(.swiper-slide-active) .notActive {
   filter: grayscale(1);
 }
 
@@ -46,7 +46,7 @@
 }
 
 @media (min-width: 992px) {
-  .swiper-slide.swiper-slide-active {
+  .artistSwiper .swiper-slide.swiper-slide-active {
     transform: scale(1.1);
   }
 }
