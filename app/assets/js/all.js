@@ -78,4 +78,12 @@ $(document).ready(() => {
     $('.historyBtn .fa-angle-down').toggleClass('hidden');
   })
   /* 藝術品介紹 end */
+
+  /* 藝術品系列-篩選 */
+  $('.searchArtistBtn').click(function(e) {
+    e.preventDefault();
+    $('.searchArtist').slideToggle();
+    $('.mainContent').toggleClass('hidden');
+  })
+  /* 藝術品系列-篩選 end */
 });
