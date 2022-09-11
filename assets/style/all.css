@@ -944,9 +944,6 @@ select {
 .w-\[25\.8\%\] {
   width: 25.8%;
 }
-.w-2\/3 {
-  width: 66.666667%;
-}
 .w-4 {
   width: 1rem;
 }
@@ -2145,12 +2142,8 @@ select {
     width: 180px;
   }
 
-  .lg\:w-\[58\%\] {
-    width: 58%;
-  }
-
-  .lg\:w-\[56\%\] {
-    width: 56%;
+  .lg\:w-\[30vw\] {
+    width: 30vw;
   }
 
   .lg\:w-auto {
@@ -2212,6 +2205,12 @@ select {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+
+  .lg\:justify-center {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
   .lg\:justify-between {
