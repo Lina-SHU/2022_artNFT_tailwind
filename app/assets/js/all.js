@@ -85,5 +85,46 @@ $(document).ready(() => {
     $('.searchArtist').slideToggle();
     $('.mainContent').toggleClass('hidden');
   })
+  $('.networkBtn').click(function(e) {
+    e.preventDefault();
+    $('.network').slideToggle();
+    $('.networkBtn .fa-angle-up').toggleClass('hidden');
+    $('.networkBtn .fa-angle-down').toggleClass('hidden');
+  })
+  $('.statusBtn').click(function (e) {
+    e.preventDefault();
+    $('.status').slideToggle();
+    $('.statusBtn .fa-angle-up').toggleClass('hidden');
+    $('.statusBtn .fa-angle-down').toggleClass('hidden');
+  })
+  $('.artPriceBtn').click(function (e) {
+    e.preventDefault();
+    $('.artPrice').slideToggle();
+    $('.artPriceBtn .fa-angle-up').toggleClass('hidden');
+    $('.artPriceBtn .fa-angle-down').toggleClass('hidden');
+  })
+  $('.speciesBtn').click(function (e) {
+    e.preventDefault();
+    $('.species').slideToggle();
+    $('.speciesBtn .fa-angle-up').toggleClass('hidden');
+    $('.speciesBtn .fa-angle-down').toggleClass('hidden');
+  })
   /* 藝術品系列-篩選 end */
+
+  /* 市價排行榜 */
+  for(let i = 1; i < 11; i++){
+    $(`.openPrice${i}`).click(function (e) {
+      e.preventDefault();
+      $(`.openPrice${i}`).toggleClass('hidden');
+      $(`.priceContent${i}`).slideToggle();
+      $(`.closePrice${i}`).toggleClass('hidden');
+    });
+    $(`.closePrice${i}`).click(function (e) {
+      e.preventDefault();
+      $(`.openPrice${i}`).toggleClass('hidden');
+      $(`.priceContent${i}`).slideToggle();
+      $(`.closePrice${i}`).toggleClass('hidden');
+    });
+  }
+  /* 市價排行榜 end */
 });

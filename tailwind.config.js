@@ -52,9 +52,11 @@ module.exports = {
       borderWidth: {
         '10': '10px',
         '16': '16px',
-        '24': '24px'
+        '24': '24px',
+        '32': '32px'
       },
       spacing: {
+        '13': '52px',
         '22': '88px',
       }
     }
