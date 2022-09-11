@@ -14,7 +14,7 @@ $(document).ready(() => {
     e.preventDefault();
     $('.searchBar').toggleClass('hidden');
   })
-  /* nab menu */
+  /* nav menu */
   $('.menuBtn').click(function(e) {
     e.preventDefault();
     $('.menuList').slideToggle().toggleClass('hidden');
@@ -127,4 +127,28 @@ $(document).ready(() => {
     });
   }
   /* 市價排行榜 end */
+
+  /* 連結錢包 */
+  $('.walletBtn').click(function(e) {
+    e.preventDefault();
+    $('.walletModal').toggleClass('hidden');
+  })
+  $('.connectBtn').click(function(e) {
+    e.preventDefault();
+    $('.walletModal').toggleClass('hidden');
+  })
+  $('.walletBtn_m').click(function(e) {
+    e.preventDefault();
+    $('.mainContent').toggleClass('hidden');
+    $('.walletModal_m').toggleClass('hidden');
+    $('.menuList').slideToggle().toggleClass('hidden');
+    $('.closeBtn').toggleClass('hidden');
+    $('.menuBtn').toggleClass('hidden');
+  })
+  $('.connectBtn_m').click(function (e) {
+    e.preventDefault();
+    $('.mainContent').toggleClass('hidden');
+    $('.walletModal_m').toggleClass('hidden');
+  })
+  /* 連結錢包 end */
 });

@@ -58,6 +58,9 @@ module.exports = {
       spacing: {
         '13': '52px',
         '22': '88px',
+      },
+      opacity: {
+        '65': '.65',
       }
     }
   },
