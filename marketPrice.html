@@ -49,9 +49,9 @@
             市值
           </a></li>
           <li>
-            <a href="#" class="text-lg text-center bg-primary border border-black py-3 text-white lg:hidden">
+            <a href="#" class="walletBtn_m text-lg text-center bg-primary border border-black py-3 text-white lg:hidden">
             連結錢包</a>
-            <a href="#" class="hidden lg:block lg:bg-light lg:py-10 lg:pl-12 lg:border-l lg:border-black hover:text-primary">
+            <a href="#" class="walletBtn hidden lg:block lg:bg-light lg:py-10 lg:pl-12 lg:border-l lg:border-black hover:text-primary">
               <i class="fa-solid fa-wallet text-[23px]"></i>
             </a>
           </li>
@@ -69,7 +69,7 @@
       </a>
     </div>
   </header>
-  <div class="mt-[59px] lg:mt-[108px]">
+  <div class="mainContent mt-[59px] lg:mt-[108px]">
     <main>
   <div class="container pt-6 pb-10 lg:pt-10 lg:pb-20">
     <h2 class="text-center font-bold text-3xxl mb-4 lg:text-5xl lg:mb-6">市價排行榜</h2>
@@ -89,7 +89,7 @@
           </div>
         </div>
       </li>
-      <li class="">
+      <li>
         <div class="relative flex border border-black bg-white">
           <a href="#" class="openPrice1 lg:hidden">
             <div class="absolute right-0 bottom-0 bg-white text-white border-r-32 border-r-black border-t-32 border-t-transparent h-0 w-0">
@@ -148,7 +148,7 @@
           </ul>
         </div>
       </li>
-      <li class="">
+      <li>
         <div class="relative flex border border-black border-t-0 bg-white">
           <a href="#" class="openPrice2 lg:hidden">
             <div
@@ -210,7 +210,7 @@
           </ul>
         </div>
       </li>
-      <li class="">
+      <li>
         <div class="relative flex border border-black border-t-0 bg-white">
           <a href="#" class="openPrice3 lg:hidden">
             <div
@@ -272,7 +272,7 @@
           </ul>
         </div>
       </li>
-      <li class="">
+      <li>
         <div class="relative flex border border-black border-t-0 bg-white">
           <a href="#" class="openPrice4 lg:hidden">
             <div
@@ -334,7 +334,7 @@
           </ul>
         </div>
       </li>
-      <li class="">
+      <li>
         <div class="relative flex border border-black border-t-0 bg-white">
           <a href="#" class="openPrice5 lg:hidden">
             <div
@@ -396,7 +396,7 @@
           </ul>
         </div>
       </li>
-      <li class="">
+      <li>
         <div class="relative flex border border-black border-t-0 bg-white">
           <a href="#" class="openPrice6 lg:hidden">
             <div
@@ -458,7 +458,7 @@
           </ul>
         </div>
       </li>
-      <li class="">
+      <li>
         <div class="relative flex border border-black border-t-0 bg-white">
           <a href="#" class="openPrice7 lg:hidden">
             <div
@@ -520,7 +520,7 @@
           </ul>
         </div>
       </li>
-      <li class="">
+      <li>
         <div class="relative flex border border-black border-t-0 bg-white">
           <a href="#" class="openPrice8 lg:hidden">
             <div
@@ -582,7 +582,7 @@
           </ul>
         </div>
       </li>
-      <li class="">
+      <li>
         <div class="relative flex border border-black border-t-0 bg-white">
           <a href="#" class="openPrice9 lg:hidden">
             <div
@@ -644,7 +644,7 @@
           </ul>
         </div>
       </li>
-      <li class="">
+      <li>
         <div class="relative flex border border-black border-t-0 bg-white">
           <a href="#" class="openPrice10 lg:hidden">
             <div
@@ -716,6 +716,139 @@
     <p class="text-center py-6">© ART NFT. All Rights Reserved</p>
   </footer>
   
+  <!-- 連結你的錢包 PC -->
+  <div class="walletModal relative z-50 hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+    <div class="fixed inset-0 bg-black bg-opacity-65 transition-opacity"></div>
+    <div class="container fixed z-40 inset-0 overflow-y-auto">
+      <div class="flex items-center items-center justify-center min-h-full">
+        <div
+          class="relative overflow-hidden shadow-xl transform transition-all w-full mx-3 mx-auto bg-white md:w-2/3 lg:w-1/2">
+          <h2 class="text-center text-xl py-4 border-b border-b-black">連結你的錢包</h2>
+          <div class="py-6 px-4">
+            <ul class="flex flex-wrap justify-between -mx-1 mb-6">
+              <li class="w-1/2 px-1 mb-2">
+                <a href="#" class="group flex justify-between items-center p-4 border border-black hover:border-primary">
+                  <div class="flex items-center">
+                    <img src="./assets/images/logo/connect01.png" class="w-4 h-4 mr-4" alt="MetaMask">MetaMask
+                  </div>
+                  <i class="fa-solid fa-check text-primary hidden group-hover:inline"></i>
+                </a>
+              </li>
+              <li class="w-1/2 px-1 mb-2">
+                <a href="#"
+                  class="group flex justify-between items-center p-4 border border-black hover:border-primary">
+                  <div class="flex items-center">
+                    <img src="./assets/images/logo/connect02.png" class="w-4 h-4 mr-4" alt="Coinbase Wallet">Coinbase Wallet
+                  </div>
+                  <i class="fa-solid fa-check text-primary hidden group-hover:inline"></i>
+                </a>
+              </li>
+              <li class="w-1/2 px-1 mb-2">
+                <a href="#"
+                  class="group flex justify-between items-center p-4 border border-black hover:border-primary">
+                  <div class="flex items-center">
+                    <img src="./assets/images/logo/connect03.png" class="w-4 h-4 mr-4" alt="WalletConnect">WalletConnect
+                  </div>
+                  <i class="fa-solid fa-check text-primary hidden group-hover:inline"></i>
+                </a>
+              </li>
+              <li class="w-1/2 px-1 mb-2">
+                <a href="#"
+                  class="group flex justify-between items-center p-4 border-2 border-primary hover:border-primary">
+                  <div class="flex items-center">
+                    <img src="./assets/images/logo/connect04.png" class="w-4 h-4 mr-4" alt="Phantom">Phantom
+                  </div>
+                  <i class="fa-solid fa-check text-primary hidden group-hover:inline"></i>
+                </a>
+              </li>
+              <li class="w-1/2 px-1">
+                <a href="#"
+                  class="group flex justify-between items-center p-4 border border-black hover:border-primary">
+                  <div class="flex items-center">
+                    <img src="./assets/images/logo/connect05.png" class="w-4 h-4 mr-4" alt="Glow">Glow
+                  </div>
+                  <i class="fa-solid fa-check text-primary hidden group-hover:inline"></i>
+                </a>
+              </li>
+              <li class="w-1/2 px-1">
+                <a href="#"
+                  class="group flex justify-between items-center p-4 border border-black hover:border-primary">
+                  <div class="flex items-center">
+                    <img src="./assets/images/logo/connect06.png" class="w-4 h-4 mr-4" alt="Fortmatic">Fortmatic
+                  </div>
+                  <i class="fa-solid fa-check text-primary hidden group-hover:inline"></i>
+                </a>
+              </li>
+            </ul>
+            <div class="text-center">
+              <a href="#" class="connectBtn inline-block text-lg bg-primary text-white border border-black py-2 px-12">連結錢包</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 連結你的錢包 moblie -->
+  <div class="walletModal_m hidden bg-white absolute inset-x-0 top-0 h-screen z-50">
+    <div class="relative py-4 text-center border-b border-black">
+      <h3 class="text-xl">連結你的錢包</h3>
+      <a href="#" class="connectBtn_m absolute right-3 top-1/2 -translate-y-2/4"><i
+          class="fa-solid fa-xmark text-lg"></i></a>
+    </div>
+    <ul class="container mt-6">
+      <li class="mb-2">
+        <a href="#" class="group flex justify-between items-center p-4 border border-black">
+          <div class="flex items-center">
+            <img src="./assets/images/logo/connect01.png" class="w-4 h-4 mr-4" alt="MetaMask">MetaMask
+          </div>
+          <i class="fa-solid fa-check text-primary hidden"></i>
+        </a>
+      </li>
+      <li class="mb-2">
+        <a href="#" class="group flex justify-between items-center p-4 border border-black">
+          <div class="flex items-center">
+            <img src="./assets/images/logo/connect02.png" class="w-4 h-4 mr-4" alt="Coinbase Wallet">Coinbase Wallet
+          </div>
+          <i class="fa-solid fa-check text-primary hidden"></i>
+        </a>
+      </li>
+      <li class="mb-2">
+        <a href="#" class="group flex justify-between items-center p-4 border border-black">
+          <div class="flex items-center">
+            <img src="./assets/images/logo/connect03.png" class="w-4 h-4 mr-4" alt="WalletConnect">WalletConnect
+          </div>
+          <i class="fa-solid fa-check text-primary hidden"></i>
+        </a>
+      </li>
+      <li class="mb-2">
+        <a href="#" class="group flex justify-between items-center p-4 border-2 border-primary">
+          <div class="flex items-center">
+            <img src="./assets/images/logo/connect04.png" class="w-4 h-4 mr-4" alt="Phantom">Phantom
+          </div>
+          <i class="fa-solid fa-check text-primary"></i>
+        </a>
+      </li>
+      <li class="mb-2">
+        <a href="#" class="group flex justify-between items-center p-4 border border-black">
+          <div class="flex items-center">
+            <img src="./assets/images/logo/connect05.png" class="w-4 h-4 mr-4" alt="Glow">Glow
+          </div>
+          <i class="fa-solid fa-check text-primary hidden"></i>
+        </a>
+      </li>
+      <li class="mb-2">
+        <a href="#" class="group flex justify-between items-center p-4 border border-black">
+          <div class="flex items-center">
+            <img src="./assets/images/logo/connect06.png" class="w-4 h-4 mr-4" alt="Fortmatic">Fortmatic
+          </div>
+          <i class="fa-solid fa-check text-primary hidden"></i>
+        </a>
+      </li>
+    </ul>
+    <a href="#" class="connectBtn_m absolute bottom-0 inset-x-0 text-center text-lg text-white bg-primary border border-black py-1.5">連結錢包</a>
+  </div>
+
   <script src="./assets/js/vendors.js"></script>
   <script
       src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
