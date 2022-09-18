@@ -30,7 +30,9 @@
       <div class="lg:flex">
         <div class="hidden lg:flex lg:justify-center lg:items-center lg:border-l lg:border-black lg:w-[30vw] lg:px-12">
           <input type="text" placeholder="搜尋作品名稱、藝術家名稱" class="bg-transparent p-0 text-dark border-0 mr-6 focus:ring-0 grow">
-          <i class="fa-solid fa-magnifying-glass text-lg"></i>
+          <a href="#">
+            <i class="fa-solid fa-magnifying-glass text-lg"></i>
+          </a>
         </div>
         <div class="flex items-center lg:hidden">
           <a href="#" class="searchBtn mr-6">
@@ -79,17 +81,17 @@
           <div class="flex justify-between items-center mb-2 lg:mb-4">
             <h2 class="text-3xxl lg:text-5xl lg:leading-[50px]">Michael</h2>
             <ul class="flex">
-              <li><a href="#" class="mr-2">
-                <i class="fa-brands fa-discord"></i>
+              <li><a href="#" class="group mr-2">
+                <i class="fa-brands fa-discord group-hover:text-primary"></i>
               </a></li>
-              <li><a href="#" class="mr-2">
-                <i class="fa-brands fa-facebook-f"></i>
+              <li><a href="#" class="group mr-2">
+                <i class="fa-brands fa-facebook-f group-hover:text-primary"></i>
               </a></li>
-              <li><a href="#" class="mr-2">
-                <i class="fa-solid fa-globe"></i>
+              <li><a href="#" class="group mr-2">
+                <i class="fa-solid fa-globe group-hover:text-primary"></i>
               </a></li>
-              <li><a href="#">
-                <i class="fa-brands fa-twitter"></i>
+              <li><a href="#" class="group">
+                <i class="fa-brands fa-twitter group-hover:text-primary"></i>
               </a></li>
             </ul>
           </div>
@@ -121,11 +123,11 @@
   </div>
   <!-- artwork & collection -->
   <ul class="flex border-b border-black mb-6 lg:mb-10">
-    <li><a href="#" class="artworkBtn text-3xxl p-4 border border-black border-b border-b-transparent -mb-[1px] bg-light lg:px-12 lg:text-5xl lg:leading-12">
+    <li><a href="#" class="artworkBtn text-3xxl p-4 border border-black border-b border-b-transparent -mb-px bg-light lg:px-12 lg:text-5xl lg:leading-12">
       Art Works
       <span class="hidden lg:inline lg:text-xl lg:font-bold lg:ml-4">系列作品</span>
     </a></li>
-    <li><a href="#" class="collectionBtn text-3xxl text-dark p-4 -mb-[1px] bg-light lg:px-12 lg:text-5xl lg:leading-12">
+    <li><a href="#" class="collectionBtn text-3xxl text-dark p-4 -mb-px bg-light lg:px-12 lg:text-5xl lg:leading-12">
       Collection
       <span class="hidden lg:inline lg:text-xl lg:font-bold lg:ml-4">收藏品</span>
     </a></li>
@@ -141,7 +143,7 @@
           <div class="mb-6 lg:flex lg:justify-between lg:items-end lg:pb-[270px] lg:mb-0">
             <p class="lg:w-4/5 lg:mb-0">我又沒有特別喜歡花，為什麼不給我現金就好，擺在那也不知道要幹嘛，只好畫起來看有沒有人要買，阿不然如果真的喜歡我，把這些都買回去八。</p>
             <a href="#"
-              class="hidden lg:block relative inline-block border border-black text-lg py-2 px-12 leading-4.5 after:absolute after:content-[''] after:w-0 after:h-0 after:bottom-0 after:right-0 after:border-r-[16px] after:border-r-primary after:border-t-[16px] after:border-t-transparent hover:bg-primary hover:text-white after:hover:border-r-black">MORE</a>
+              class="hidden lg:block relative inline-block border border-black text-lg py-2 px-12 leading-4.5 after:absolute after:w-0 after:h-0 after:bottom-0 after:right-0 after:border-r-16 after:border-r-primary after:border-t-[16px] after:border-t-transparent hover:bg-primary hover:text-white after:hover:border-r-black">MORE</a>
           </div>
           <ul class="lg:flex lg:space-x-2 lg:absolute lg:inset-x-0 lg:-bottom-12 lg:mx-3">
             <li class="h-[313px] bg-[url('../images/the-new-york-public-library-vBejyCBXZBY-unsplash.jpg')] bg-no-repeat bg-cover bg-center border-10 border-black mb-4 lg:mb-0 lg:h-[270px] lg:w-1/4"></li>
@@ -153,7 +155,7 @@
           </ul>
           <div class="text-center lg:hidden">
             <a href="#"
-              class="relative inline-block border border-black text-lg py-2 px-12 leading-4.5 after:absolute after:content-[''] after:w-0 after:h-0 after:bottom-0 after:right-0 after:border-r-[16px] after:border-r-primary after:border-t-[16px] after:border-t-transparent hover:bg-primary hover:text-white after:hover:border-r-black">MORE</a>
+              class="relative inline-block border border-black text-lg py-2 px-12 leading-4.5 after:absolute after:w-0 after:h-0 after:bottom-0 after:right-0 after:border-r-16 after:border-r-primary after:border-t-[16px] after:border-t-transparent hover:bg-primary hover:text-white after:hover:border-r-black">MORE</a>
           </div>
         </div>
       </div>
@@ -167,7 +169,7 @@
           <div class="mb-6 lg:flex lg:justify-between lg:items-end lg:pb-[270px] lg:mb-0">
             <p class="lg:w-4/5 lg:mb-0">家門前每天都有不同的小鳥，大多數的小鳥都有特殊能力，特殊能力是什麼我就不說了，希望大家能從作品感受到小鳥的快樂。</p>
             <a href="#"
-              class="hidden lg:block relative inline-block border border-black text-lg py-2 px-12 leading-4.5 after:absolute after:content-[''] after:w-0 after:h-0 after:bottom-0 after:right-0 after:border-r-[16px] after:border-r-primary after:border-t-[16px] after:border-t-transparent hover:bg-primary hover:text-white after:hover:border-r-black">MORE</a>
+              class="hidden lg:block relative inline-block border border-black text-lg py-2 px-12 leading-4.5 after:absolute after:w-0 after:h-0 after:bottom-0 after:right-0 after:border-r-16 after:border-r-primary after:border-t-[16px] after:border-t-transparent hover:bg-primary hover:text-white after:hover:border-r-black">MORE</a>
           </div>
           <ul class="lg:flex lg:space-x-2 lg:absolute lg:inset-x-0 lg:-bottom-12 lg:mx-3">
             <li
@@ -185,7 +187,7 @@
           </ul>
           <div class="text-center lg:hidden">
             <a href="#"
-              class="relative inline-block border border-black text-lg py-2 px-12 leading-4.5 after:absolute after:content-[''] after:w-0 after:h-0 after:bottom-0 after:right-0 after:border-r-[16px] after:border-r-primary after:border-t-[16px] after:border-t-transparent hover:bg-primary hover:text-white after:hover:border-r-black">MORE</a>
+              class="relative inline-block border border-black text-lg py-2 px-12 leading-4.5 after:absolute after:w-0 after:h-0 after:bottom-0 after:right-0 after:border-r-16 after:border-r-primary after:border-t-[16px] after:border-t-transparent hover:bg-primary hover:text-white after:hover:border-r-black">MORE</a>
           </div>
         </div>
       </div>
@@ -198,7 +200,7 @@
       <div class="grid-item mb-4 w-1/2 px-3 lg:w-1/4 lg:mb-12">
         <a href="#" class="group bg-white p-2 lg:p-6">
           <div class="bg-[url('../images/art09.jpg')] bg-no-repeat bg-center bg-cover relative h-[139px] lg:h-[254px]">
-            <div class="hidden bg-black/[0.7] absolute top-0 bottom-0 left-0 right-0 p-4 z-20 lg:group-hover:block">
+            <div class="hidden bg-black/[0.7] absolute inset-0 p-4 z-20 lg:group-hover:block">
               <div class="border border-white p-4 h-full text-white flex flex-col justify-between items-start">
                 <div>
                   <p class="mb-4">唯一想擁有的人，唯一不可以擁有的</p>
@@ -208,7 +210,7 @@
                   </p>
                 </div>
                 <div
-                  class="relative bg-white inline-block border border-black text-lg py-2 px-12 text-black leading-4.5 ml-auto after:absolute after:content-[''] after:w-0 after:h-0 after:bottom-0 after:right-0 after:border-r-[16px] after:border-r-primary after:border-t-[16px] after:border-t-transparent hover:bg-primary hover:text-white after:hover:border-r-black">
+                  class="relative bg-white inline-block border border-black text-lg py-2 px-12 text-black leading-4.5 ml-auto after:absolute after:w-0 after:h-0 after:bottom-0 after:right-0 after:border-r-16 after:border-r-primary after:border-t-[16px] after:border-t-transparent hover:bg-primary hover:text-white after:hover:border-r-black">
                   MORE</div>
               </div>
             </div>
@@ -219,7 +221,7 @@
       <div class="grid-item mb-4 w-1/2 px-3 lg:w-1/4 lg:mb-12">
         <a href="#" class="group bg-white p-2 lg:p-6">
           <div class="bg-[url('../images/art10.jpg')] bg-no-repeat bg-center relative bg-cover h-[151px] lg:h-[327px]">
-            <div class="hidden bg-black/[0.7] absolute top-0 bottom-0 left-0 right-0 p-4 z-20 lg:group-hover:block">
+            <div class="hidden bg-black/[0.7] absolute inset-0 p-4 z-20 lg:group-hover:block">
               <div class="border border-white p-4 h-full text-white flex flex-col justify-between items-start">
                 <div>
                   <p class="mb-4">唯一想擁有的人，唯一不可以擁有的</p>
@@ -229,7 +231,7 @@
                   </p>
                 </div>
                 <div
-                  class="relative bg-white inline-block border border-black text-lg py-2 px-12 text-black leading-4.5 ml-auto after:absolute after:content-[''] after:w-0 after:h-0 after:bottom-0 after:right-0 after:border-r-[16px] after:border-r-primary after:border-t-[16px] after:border-t-transparent hover:bg-primary hover:text-white after:hover:border-r-black">
+                  class="relative bg-white inline-block border border-black text-lg py-2 px-12 text-black leading-4.5 ml-auto after:absolute after:w-0 after:h-0 after:bottom-0 after:right-0 after:border-r-16 after:border-r-primary after:border-t-[16px] after:border-t-transparent hover:bg-primary hover:text-white after:hover:border-r-black">
                   MORE</div>
               </div>
             </div>
@@ -240,7 +242,7 @@
       <div class="grid-item mb-4 w-1/2 px-3 lg:w-1/4 lg:mb-12">
         <a href="#" class="group bg-white p-2 lg:p-6">
           <div class="bg-[url('../images/art02.jpg')] bg-no-repeat bg-center bg-cover relative h-[93px] lg:h-[254px]">
-            <div class="hidden bg-black/[0.7] absolute top-0 bottom-0 left-0 right-0 p-4 z-20 lg:group-hover:block">
+            <div class="hidden bg-black/[0.7] absolute inset-0 p-4 z-20 lg:group-hover:block">
               <div class="border border-white p-4 h-full text-white flex flex-col justify-between items-start">
                 <div>
                   <p class="mb-4">唯一想擁有的人，唯一不可以擁有的</p>
@@ -250,7 +252,7 @@
                   </p>
                 </div>
                 <div
-                  class="relative bg-white inline-block border border-black text-lg py-2 px-12 text-black leading-4.5 ml-auto after:absolute after:content-[''] after:w-0 after:h-0 after:bottom-0 after:right-0 after:border-r-[16px] after:border-r-primary after:border-t-[16px] after:border-t-transparent hover:bg-primary hover:text-white after:hover:border-r-black">
+                  class="relative bg-white inline-block border border-black text-lg py-2 px-12 text-black leading-4.5 ml-auto after:absolute after:w-0 after:h-0 after:bottom-0 after:right-0 after:border-r-16 after:border-r-primary after:border-t-[16px] after:border-t-transparent hover:bg-primary hover:text-white after:hover:border-r-black">
                   MORE</div>
               </div>
             </div>
@@ -261,7 +263,7 @@
       <div class="grid-item mb-4 w-1/2 px-3 lg:w-1/4 lg:mb-12">
         <a href="#" class="group bg-white p-2 lg:p-6">
           <div class="bg-[url('../images/art11.jpg')] bg-no-repeat bg-center bg-cover relative h-[173px] lg:h-[169px]">
-            <div class="hidden bg-black/[0.7] absolute top-0 bottom-0 left-0 right-0 p-4 z-20 lg:group-hover:block">
+            <div class="hidden bg-black/[0.7] absolute inset-0 p-4 z-20 lg:group-hover:block">
               <div class="border border-white p-4 h-full text-white flex flex-col justify-between items-start">
                 <div>
                   <p class="mb-4">唯一想擁有的人，唯一不可以擁有的</p>
@@ -271,7 +273,7 @@
                   </p>
                 </div>
                 <div
-                  class="relative bg-white inline-block border border-black text-lg py-2 px-12 text-black leading-4.5 ml-auto after:absolute after:content-[''] after:w-0 after:h-0 after:bottom-0 after:right-0 after:border-r-[16px] after:border-r-primary after:border-t-[16px] after:border-t-transparent hover:bg-primary hover:text-white after:hover:border-r-black">
+                  class="relative bg-white inline-block border border-black text-lg py-2 px-12 text-black leading-4.5 ml-auto after:absolute after:w-0 after:h-0 after:bottom-0 after:right-0 after:border-r-16 after:border-r-primary after:border-t-[16px] after:border-t-transparent hover:bg-primary hover:text-white after:hover:border-r-black">
                   MORE</div>
               </div>
             </div>
@@ -283,7 +285,7 @@
         <a href="#" class="group bg-white p-2 lg:p-6">
           <img src="./assets/images/art27.jpg" alt="我真的受傷了" class="hidden p-6 bg-white">
           <div class="bg-[url('../images/art27.jpg')] bg-no-repeat bg-center bg-cover relative h-[192px] lg:h-[254px]">
-            <div class="hidden bg-black/[0.7] absolute top-0 bottom-0 left-0 right-0 p-4 z-20 lg:group-hover:block">
+            <div class="hidden bg-black/[0.7] absolute inset-0 p-4 z-20 lg:group-hover:block">
               <div class="border border-white p-4 h-full text-white flex flex-col justify-between items-start">
                 <div>
                   <p class="mb-4">唯一想擁有的人，唯一不可以擁有的</p>
@@ -293,7 +295,7 @@
                   </p>
                 </div>
                 <div
-                  class="relative bg-white inline-block border border-black text-lg py-2 px-12 text-black leading-4.5 ml-auto after:absolute after:content-[''] after:w-0 after:h-0 after:bottom-0 after:right-0 after:border-r-[16px] after:border-r-primary after:border-t-[16px] after:border-t-transparent hover:bg-primary hover:text-white after:hover:border-r-black">
+                  class="relative bg-white inline-block border border-black text-lg py-2 px-12 text-black leading-4.5 ml-auto after:absolute after:w-0 after:h-0 after:bottom-0 after:right-0 after:border-r-16 after:border-r-primary after:border-t-[16px] after:border-t-transparent hover:bg-primary hover:text-white after:hover:border-r-black">
                   MORE</div>
               </div>
             </div>
@@ -304,7 +306,7 @@
       <div class="grid-item w-1/2 px-3 lg:w-1/4 lg:mb-12">
         <a href="#" class="group bg-white p-2 lg:p-6">
           <div class="bg-[url('../images/art12.jpg')] bg-no-repeat bg-center bg-cover relative h-[192px] lg:h-[174px]">
-            <div class="hidden bg-black/[0.7] absolute top-0 bottom-0 left-0 right-0 p-4 z-20 lg:group-hover:block">
+            <div class="hidden bg-black/[0.7] absolute inset-0 p-4 z-20 lg:group-hover:block">
               <div class="border border-white p-4 h-full text-white flex flex-col justify-between items-start">
                 <div>
                   <p class="mb-4">唯一想擁有的人，唯一不可以擁有的</p>
@@ -314,7 +316,7 @@
                   </p>
                 </div>
                 <div
-                  class="relative bg-white inline-block border border-black text-lg py-2 px-12 text-black leading-4.5 ml-auto after:absolute after:content-[''] after:w-0 after:h-0 after:bottom-0 after:right-0 after:border-r-[16px] after:border-r-primary after:border-t-[16px] after:border-t-transparent hover:bg-primary hover:text-white after:hover:border-r-black">
+                  class="relative bg-white inline-block border border-black text-lg py-2 px-12 text-black leading-4.5 ml-auto after:absolute after:w-0 after:h-0 after:bottom-0 after:right-0 after:border-r-16 after:border-r-primary after:border-t-[16px] after:border-t-transparent hover:bg-primary hover:text-white after:hover:border-r-black">
                   MORE</div>
               </div>
             </div>
@@ -325,7 +327,7 @@
       <div class="grid-item hidden w-1/2 px-3 lg:block lg:w-1/4">
         <a href="#" class="group bg-white p-2 lg:p-6">
           <div class="bg-[url('../images/art04.jpg')] bg-no-repeat bg-center bg-cover h-[395px] relative">
-            <div class="hidden bg-black/[0.7] absolute top-0 bottom-0 left-0 right-0 p-4 z-20 lg:group-hover:block">
+            <div class="hidden bg-black/[0.7] absolute inset-0 p-4 z-20 lg:group-hover:block">
               <div class="border border-white p-4 h-full text-white flex flex-col justify-between items-start">
                 <div>
                   <p class="mb-4">唯一想擁有的人，唯一不可以擁有的</p>
@@ -335,7 +337,7 @@
                   </p>
                 </div>
                 <div
-                  class="relative bg-white inline-block border border-black text-lg py-2 px-12 text-black leading-4.5 ml-auto after:absolute after:content-[''] after:w-0 after:h-0 after:bottom-0 after:right-0 after:border-r-[16px] after:border-r-primary after:border-t-[16px] after:border-t-transparent hover:bg-primary hover:text-white after:hover:border-r-black">
+                  class="relative bg-white inline-block border border-black text-lg py-2 px-12 text-black leading-4.5 ml-auto after:absolute after:w-0 after:h-0 after:bottom-0 after:right-0 after:border-r-16 after:border-r-primary after:border-t-[16px] after:border-t-transparent hover:bg-primary hover:text-white after:hover:border-r-black">
                   MORE</div>
               </div>
             </div>
@@ -346,7 +348,7 @@
       <div class="grid-item w-1/2 px-3 lg:w-1/4">
         <a href="#" class="group bg-white p-2 lg:p-6">
           <div class="bg-[url('../images/art03.jpg')] bg-no-repeat bg-center bg-cover relative h-[99px] lg:h-[254px]">
-            <div class="hidden bg-black/[0.7] absolute top-0 bottom-0 left-0 right-0 p-4 z-20 lg:group-hover:block">
+            <div class="hidden bg-black/[0.7] absolute inset-0 p-4 z-20 lg:group-hover:block">
               <div class="border border-white p-4 h-full text-white flex flex-col justify-between items-start">
                 <div>
                   <p class="mb-4">唯一想擁有的人，唯一不可以擁有的</p>
@@ -356,7 +358,7 @@
                   </p>
                 </div>
                 <div
-                  class="relative bg-white inline-block border border-black text-lg py-2 px-12 text-black leading-4.5 ml-auto after:absolute after:content-[''] after:w-0 after:h-0 after:bottom-0 after:right-0 after:border-r-[16px] after:border-r-primary after:border-t-[16px] after:border-t-transparent hover:bg-primary hover:text-white after:hover:border-r-black">
+                  class="relative bg-white inline-block border border-black text-lg py-2 px-12 text-black leading-4.5 ml-auto after:absolute after:w-0 after:h-0 after:bottom-0 after:right-0 after:border-r-16 after:border-r-primary after:border-t-[16px] after:border-t-transparent hover:bg-primary hover:text-white after:hover:border-r-black">
                   MORE</div>
               </div>
             </div>

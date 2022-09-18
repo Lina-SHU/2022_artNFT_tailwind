@@ -783,7 +783,7 @@ select {
 .mt-6 {
   margin-top: 1.5rem;
 }
-.-mb-\[1px\] {
+.-mb-px {
   margin-bottom: -1px;
 }
 .ml-auto {
@@ -1584,7 +1584,7 @@ select {
   width: 0px;
 }
 
-.after\:border-r-\[16px\]::after {
+.after\:border-r-16::after {
   content: var(--tw-content);
   border-right-width: 16px;
 }
@@ -1603,11 +1603,6 @@ select {
 .after\:border-t-transparent::after {
   content: var(--tw-content);
   border-top-color: transparent;
-}
-
-.after\:content-\[\'\'\]::after {
-  --tw-content: '';
-  content: var(--tw-content);
 }
 
 .hover\:border:hover {
@@ -1717,11 +1712,6 @@ select {
   opacity: 0.7;
 }
 
-.hover\:after\:content-\[\'\'\]:hover::after {
-  --tw-content: '';
-  content: var(--tw-content);
-}
-
 .hover\:after\:content-\[\'more\'\]:hover::after {
   --tw-content: 'more';
   content: var(--tw-content);
@@ -1765,6 +1755,11 @@ select {
 
 .group:hover .group-hover\:inline {
   display: inline;
+}
+
+.group:hover .group-hover\:text-primary {
+  --tw-text-opacity: 1;
+  color: rgb(230 85 59 / var(--tw-text-opacity));
 }
 
 @media (min-width: 720px) {
