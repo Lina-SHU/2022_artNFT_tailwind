@@ -61,6 +61,9 @@ module.exports = {
       },
       opacity: {
         '65': '.65',
+      },
+      fontFamily: {
+        'noto': ['Noto Sans TC', 'sans-serif']
       }
     }
   },

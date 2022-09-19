@@ -47,6 +47,14 @@
 
 @media (min-width: 992px) {
   .artistSwiper .swiper-slide.swiper-slide-active {
-    transform: scale(1.1);
+    transform: scale(1.06);
   }
+}
+
+input[type="radio"]:checked + label{
+  border: 2px solid #E6553B;
+}
+
+input[type="radio"]:checked + label > i {
+  display: inline;
 }
