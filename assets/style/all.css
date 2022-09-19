@@ -1398,6 +1398,9 @@ select {
 .indent-\[101\%\] {
   text-indent: 101%;
 }
+.font-noto {
+  font-family: Noto Sans TC, sans-serif;
+}
 .text-3xxl {
   font-size: 32px;
   line-height: 48px;
@@ -1553,10 +1556,18 @@ select {
 
 @media (min-width: 992px) {
   .artistSwiper .swiper-slide.swiper-slide-active {
-    -webkit-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-            transform: scale(1.1);
+    -webkit-transform: scale(1.06);
+        -ms-transform: scale(1.06);
+            transform: scale(1.06);
   }
+}
+
+input[type="radio"]:checked + label{
+  border: 2px solid #E6553B;
+}
+
+input[type="radio"]:checked + label > i {
+  display: inline;
 }
 
 .after\:absolute::after {
@@ -1589,7 +1600,7 @@ select {
   border-right-width: 16px;
 }
 
-.after\:border-t-\[16px\]::after {
+.after\:border-t-16::after {
   content: var(--tw-content);
   border-top-width: 16px;
 }
@@ -2061,6 +2072,10 @@ select {
     height: 374px;
   }
 
+  .lg\:h-\[439px\] {
+    height: 439px;
+  }
+
   .lg\:h-10 {
     height: 2.5rem;
   }
@@ -2408,6 +2423,11 @@ select {
   .lg\:text-3xxl {
     font-size: 32px;
     line-height: 48px;
+  }
+
+  .lg\:text-7xxl {
+    font-size: 80px;
+    line-height: 120px;
   }
 
   .lg\:text-2xl {
